@@ -6,6 +6,8 @@ There is no doubt that most of our childhood was spent watching anime, we have s
 
 Note: <i>This repository is created with the sole intent of guiding beginners to their initial Open Source contributions.</i>
 
+Star ⭐ the repository if you liked it :)
+
 ## How to Contribute?
 
 We appreciate all kinds of contributions from core-code contributions to non-code contributions like writing a blog, suggesting a feature, etc.
