@@ -1,3 +1,5 @@
+<p align="center"><img src="./images/main_bg.jpg" height="400" width="80%" /></p>
+
 # AnimePedia
 
 There is no doubt that most of our childhood was spent watching anime, we have seen and experienced it all. AnimePedia is a thanks-giving repository for the Anime Community ( for all the Otakus out there :) ) where lietrally anyone can contribute their favourite characters or browse them!
