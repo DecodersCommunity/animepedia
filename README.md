@@ -44,5 +44,5 @@ For more information on licensing, please refer to [License](LICENSE)
  </p>
 
 <p align="center">
-Do star the Decoder's College Notes repository ✨✨✨
+Do star the Decoder's AnimePedia repository ⭐
 </p>
