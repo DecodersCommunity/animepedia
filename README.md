@@ -10,13 +10,57 @@ Star ⭐ the repository if you liked it :)
 
 A simple application for weebs, made using HTML, CSS, JavaScript.
 
-Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+This respositoy is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+
+## What you can Contribute?
+
+There is always something to contribute to a project whether you are a Novice or a Veteran. In this project, you can add your favourite anime character as a card to the website! 
+Or maybe you didn't like the line that you are reading right now and want to change it! Well, why not?
+
+We appreciate all kinds of contributions from core-code contributions to non-code contributions like fixing the site, suggesting a feature, raising an issue, etc.
+
 
 ## How to Contribute?
 
-We appreciate all kinds of contributions from core-code contributions to non-code contributions like writing a blog, suggesting a feature, etc.
+Contributing to AnimePedia is a cake-walk as long as you follow the guidelines 😉
 
-Please refer the [Contributing Guide](CONTRIBUTING.md) to know more about the guidelines.
+Steps to Contribute
+
+- Pick the character you want to contribute, make sure it's not there on the site yet (Use Search feature)
+- Fork the repository
+- Download your favourite character's image and upload it to the **images** folder. Make sure you provide a valid name to your image file
+- Copy the Card template code given below & fill the info as directed
+'''
+                <!--Sample [Character Name] card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/[image_name_here]" alt="[Character Name here]" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">[Character Name]</h2>
+                                <p class="card-text">
+                                  [Character Description 1 Here]
+                                </p>
+                                <p>
+                                  [Character Description 2 Here]
+                                </p>
+                                <hr>
+                                <p>Contributed by- [Your name here]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
+'''
+- Paste the edited template code into the index.html file just below the last added card !
+- That's it, you have successfully contributed to AnimePedia. Your character will appear on the site within minutes 😄
+- Star ⭐ the repository if you liked it!
+- 
+Please refer the [Contributing Guide](CONTRIBUTING.md) to know more about the guidelines & Code of Conduct.
 
 ## Contributors
 
