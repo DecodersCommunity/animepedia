@@ -8,6 +8,10 @@ Note: <i>This repository is created with the sole intent of guiding beginners to
 
 Star ⭐ the repository if you liked it :)
 
+A simple application for weebs, made using HTML, CSS, JavaScript.
+
+Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+
 ## How to Contribute?
 
 We appreciate all kinds of contributions from core-code contributions to non-code contributions like writing a blog, suggesting a feature, etc.
