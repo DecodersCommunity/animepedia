@@ -2,15 +2,13 @@
 
 # AnimePedia
 
-There is no doubt that most of our childhood was spent watching anime, we have seen and experienced it all. AnimePedia is a thanks-giving repository for the Anime Community ( for all the Otakus out there :) ) where literally anyone can contribute their favourite characters or browse them!
+There is no doubt that most of our childhood was spent watching anime, we have seen and experienced it all. AnimePedia is a thanks-giving repository for the Anime Community ( for all the Otakus out there :) ) where literally anyone can contribute their favourite characters or browse them! A simple application for weebs, made using HTML, CSS, JavaScript.
 
-Note: <i>This repository is created with the sole intent of guiding beginners to their initial Open Source contributions.</i>
-
-Star ⭐ the repository if you liked it :)
-
-A simple application for weebs, made using HTML, CSS, JavaScript.
+Website: [AnimePedia](https://bit.ly/AnimePedia)
 
 This respositoy is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+
+Note: <i>This repository is created with the sole intent of guiding beginners to their initial Open Source contributions.</i>
 
 ## What you can Contribute?
 
