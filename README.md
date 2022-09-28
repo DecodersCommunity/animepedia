@@ -23,8 +23,8 @@ We appreciate all kinds of contributions from core-code contributions to non-cod
 Contributing to AnimePedia is a cake-walk as long as you follow the below steps 😉
 
 - Pick the character you want to contribute, make sure it's not there on the site yet (Use Search feature)
-- Fork the repository
-- Download your favourite character's image and upload it to the **images** folder. Make sure you provide a valid name to your image file
+- `Fork` the repository
+- Download your favourite character's image and upload it to the `images` folder. Make sure you provide a valid name to your image file
 - Copy the Card template code given below & fill in the information as directed
 
 <!--Sample [Character Name] card start-->
@@ -52,8 +52,8 @@ Contributing to AnimePedia is a cake-walk as long as you follow the below steps 
                 <!--Sample [Character Name] card end-->
                 <!--Add your card below this line -->
 
-- Paste the edited template code into the index.html file just below the last added card !
-- Fetch Upstream & then create a **Pull Request**
+- Paste the edited template code into the `index.html` file just below the last added card !
+- `Fetch Upstream` & then create a `Pull Request`
 ```
 title: Name of the character added
 description: Optional
