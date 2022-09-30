@@ -56,7 +56,7 @@ Contributing to AnimePedia is a cake-walk as long as you follow the below steps 
 - `Fetch Upstream` & then create a `Pull Request`
 ```
 title: Name of the character added
-description: Optional
+description: Issue no: #[Issue no here] (for adding a new character its #4)
 ```
 - That's it, you have successfully contributed to AnimePedia. Your character will appear on the site within minutes of your PR getting merged 😄
 - Star ⭐ the repository if you liked it!
