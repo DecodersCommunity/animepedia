@@ -12,7 +12,6 @@ function lightmode() {
   localStorage.setItem("theme", "");
   let val = localStorage.getItem("theme");
   bodyelem.classList.value = val;
-  // localStorage.setItem('theme','');
 }
 if (theme == "darkmode") {
   darkmode();
