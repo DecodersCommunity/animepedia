@@ -8,11 +8,9 @@ function darkmode() {
   bodyelem.classList.add(val);
 }
 function lightmode() {
-  //let bodyelem=document.body;
   localStorage.setItem("theme", "");
   let val = localStorage.getItem("theme");
   bodyelem.classList.value = val;
-  // localStorage.setItem('theme','');
 }
 if (theme == "darkmode") {
   darkmode();
