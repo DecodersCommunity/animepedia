@@ -1,7 +1,12 @@
 const icon = document.querySelector(".icon");
 const search = document.querySelector(".search");
+const clearIcon = document.querySelector(".clear");
 
 icon.addEventListener("click", () => {
+  search.classList.toggle("activated");
+});
+
+clearIcon.addEventListener("click", () => {
   search.classList.toggle("activated");
 });
 
