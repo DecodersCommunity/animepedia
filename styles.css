@@ -582,12 +582,20 @@ button#scrolltopBtn {
 }
 
 
-
 /* Two card in one line fix */
 #cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  column-gap: 10%;
+}
+
+
+
+#cont p{
+  font-size: 0.8rem;
+}
+#cont h2{
+  font-size: 1.8rem;
 }
 
 @media(max-width:640px){
@@ -595,3 +603,4 @@ button#scrolltopBtn {
     grid-template-columns: 1fr;
   }
 }
+
