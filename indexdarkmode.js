@@ -22,8 +22,8 @@ buttonText.addEventListener("click", () => {
   theme = localStorage.getItem("theme");
   console.log(theme);
   if (theme === "darkmode") {
-    lightmode();
-  } else {
     darkmode();
+  } else {
+    lightmode();
   }
 });
