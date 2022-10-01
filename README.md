@@ -53,7 +53,7 @@ Contributing to AnimePedia is a cake-walk as long as you follow the below steps 
                 <!--Add your card below this line -->
 
 - Paste the edited template code into the `index.html` file just below the last added card !
-- `Fetch Upstream` & then create a `Pull Request`
+- `Sync` your Fork & then create a `Pull Request`. If there are any conflicts with the main branch then resolve them first.
 ```
 title: Name of the character added
 description: Issue no: #[Issue no here] (for adding a new character its #4)
