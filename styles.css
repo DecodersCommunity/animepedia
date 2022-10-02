@@ -94,6 +94,7 @@ body {
     transition: 0.5s;
     /* box-shadow: 0 0 0 5px black; */
     overflow: hidden;
+    border: 1px solid #999;
   }
   
   .activated {
@@ -120,7 +121,7 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 3px solid #287dfc;
+    border: 3px solid #000;
     border-radius: 50%;
     transform: translate(-4px, -4px);
   }
@@ -129,7 +130,7 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    background: #287dfc;
+    background: #000;
     transform: translate(6px, 6px) rotate(315deg);
   }
   
