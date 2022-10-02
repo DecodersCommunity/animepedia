@@ -26,7 +26,7 @@ Contributing to AnimePedia is a cake-walk as long as you follow the below steps 
 - `Fork` the repository
 - Download your favourite character's image and upload it to the `images` folder. Make sure you provide a valid name to your image file
 - Copy the Card template code given below & fill in the information as directed
-
+- Note: Copy & paste the entire code as it is after filling the details of the character!
 <!--Sample [Character Name] card start-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
