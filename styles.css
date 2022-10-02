@@ -402,9 +402,7 @@ body {
    
   .card-bg {
     transition: all 0.5s;
-    background: rgba(27, 12, 107, 0.25);
-    /* background: rgba(255, 255, 255, 0.25); */
-    /* background: rgba(41, 134, 241, 0.25); */
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.5px);
     -webkit-backdrop-filter: blur(2.5px);
@@ -413,8 +411,7 @@ body {
   }
   
   .card-bg:hover {
-    /* background: rgba(255, 255, 255, 0.4); */
-    background: rgba(27, 12, 107, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -426,11 +423,7 @@ body {
   h2.card-title {
     font-size: 2.8rem;
     font-weight: 900;
-    /* color: #141a46; */
-    color: #202a76;
-  }
-  .card-body p {
-    color: rgb(155, 156, 157);
+    color: #141a46;
   }
   
   .topic {
