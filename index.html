@@ -13,6 +13,7 @@
         rel="icon" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>AnimePedia</title>
 </head>
@@ -100,7 +101,7 @@
                         </li> -->
                         <li>
                             <div class="theme-btn">
-                                <button onclick="darkMode()">Darkmode</button>
+                                <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i class="bi bi-brightness-low"></i></button>
                             </div>
                         </li>
                     </ul>
@@ -3356,6 +3357,15 @@ She puts a lot of protagonist to shame for how well sheâ€™s written, and thereâ€
         <script>
             function darkMode() {
                 var element = document.body;
+                const btn = document.getElementById('btn');
+                if(btn.classList.contains("btn-outline-dark")){
+                    btn.classList.remove("btn-outline-dark");
+                    btn.classList.add("btn-outline-light");
+                }
+                else{
+                    btn.classList.add("btn-outline-dark");
+                }
+                
                 element.classList.toggle("dark-mode");
             }
         </script>
