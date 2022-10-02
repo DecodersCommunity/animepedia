@@ -13,11 +13,20 @@
         rel="icon" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>AnimePedia</title>
 </head>
 
 <style>
+    :root{
+        --col1:blue;
+        --col2:black;
+    }
+    h2.card-title{
+        color:var(--col2);
+    }
+
     .to-top {
         color: #fff;
         position: fixed;
@@ -47,12 +56,20 @@
         color: #fff;
         text-decoration: none;
     }
+    .search .icon::after{
+        background: rgb(90, 90, 93);
+    }
+    .search .icon::before{
+        border: 3px solid rgb(90, 90, 93);
+    }
 </style>
 
 <style>
     .dark-mode {
         background-color: black;
         color: white;
+        --col1:white;
+        --col2:white;
     }
 </style>
 
@@ -64,14 +81,16 @@
     <div class="loader">
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: blue;">AnimePedia</a>
+
+                <a class="navbar-brand brand1 ml-4" href="#" style="color: rgb(90, 90, 93);">AnimePedia</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="search">
+                <div class="search" style="border: 1px solid rgb(90, 90, 93);">
                     <div class="icon"></div>
                     <div class="input">
                         <input type="text" placeholder="search" id="mysearch">
@@ -83,14 +102,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="./index.html" style="color: blue;">Home</a>
+
+                            <a class="nav-link" href="./index.html" style="color: rgb(90, 90, 93);">Home</a>
+
                         </li>
                         <!-- <li class="nav-item mx-4">
                             <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                         </li> -->
                         <li>
                             <div class="theme-btn">
-                                <button onclick="darkMode()">Darkmode</button>
+                                <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i class="bi bi-brightness-low"></i></button>
                             </div>
                         </li>
                     </ul>
@@ -130,7 +151,9 @@
             </div>
 
             <p align="center">
-            <h1 style="color: blue;">All Anime Characters</h1>
+
+            <h1 style="color: rgb(90, 90, 93);">All Anime Characters</h1>
+
             </p>
             <hr width="70%">
 
@@ -161,7 +184,7 @@
                                     fox by his name, Kurama. At this
                                     point, Naruto can use Kurama's chakra at will.</p>
                                 <hr>
-                                <p>Contributed by- Amartya Yadav</p>
+                                <p>Contributed by- Raunak Agarwal</p>
                             </div>
                         </div>
                     </div>
@@ -2571,7 +2594,35 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/Light-Yagami.jpg" alt="Light-Yagami" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Light Yagami</h2>
+                                <p class="card-text">
+
+                                    Light Yagami (Japanese: 夜神 月ライト, Hepburn: Yagami Raito) is the main protagonist of the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata.
+                                </p>
+                                <p>
+                                    He is portrayed as a brilliant but bored genius who finds the Death Note, an otherworldly supernatural notebook that allows the user to kill anyone by knowing their name and face, after it is dropped by the Shinigami Ryuk
+                                </p>
+                                <hr>
+                                <p>Contributed by- Gurnav Chaudhary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample [Character Name] card end-->
                 <!--Add your card below this line -->
+                <!--Add your card below this line -->
+
+
 
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
@@ -2699,6 +2750,28 @@
                 <!--Sample [Character Name] card end-->
                 <!--Add your card below this line -->
 
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/Orochimaru.jpg" alt="Orochimaru" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Orochimaru</h2>
+                                <p class="card-text">
+                                    Orochimaru (大蛇丸, Orochimaru) is one of Konohagakure's legendary Sannin. With a life-ambition to learn all of the world's secrets, Orochimaru seeks immortality so that he might live all of the lives necessary to accomplish his task. After being caught red-handed performing unethical experiments on his fellow citizens for the sake of this immortality, Orochimaru defected from Konoha rather than be persecuted for his ambitions, and for many years sought the village's destruction in order to take revenge and demonstrate what he had learned. 
+                                </p>
+                                <p>
+                                    After several apparent deaths in the pursuit of his goals, Orochimaru realises his approach is flawed through Kabuto Yakushi, his former associate, and begins monitoring the choices and actions of his former apprentice, Sasuke Uchiha.
+                                </p>
+                                <hr>
+                                <p>Contributed by - Sahil Dhanjal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample Orochimaru card end--> <!--Add your card below this line -->
 
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
@@ -2942,7 +3015,7 @@
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                            <img src="./images/sukuna" alt="Sukuna" height="390px" width="300px">
+                            <img src="./images/sukuna.jpg" alt="Sukuna" height="390px" width="300px">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -3141,6 +3214,36 @@
                         </div>
                     </div>
                 </div>
+                 <!--Sample [Character Name] card end-->
+                 <!--Add your card below this line -->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+            <img src="./images/Psycho Pass.jpg" alt="Akane Tsunemori" height="390px" width="300px">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2 class="card-title">Akane Tsunemori</h2>
+                <p class="card-text">
+                  Akane Tsunemori from Psycho Pass is one of the industry’s greatest female characters. And anime characters in general.
+
+She puts a lot of protagonist to shame for how well she’s written, and there’s no fan service or cliches to make it possible.
+                </p>
+                <p>
+                  Just pure skill and focus.
+
+                  Akane isn’t an aggressive type, but she is persistent in her ideals and ideas. And isn’t afraid to share them, even in the face of “authority”.
+                </p>
+                <hr>
+                <p>Contributed by- Abhinav Goyal</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Sample [Character Name] card end-->
+<!--Add your card below this line -->
+
 
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
@@ -3197,6 +3300,8 @@
                 </div>
                 <!--Sample [Character Name] card end-->
                 <!--Add your card below this line -->
+                    <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -3220,7 +3325,141 @@
                 </div>
 
 
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/2b.png" alt="YoRHa No. 2 Type B (2B)" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">YoRHa No. 2 Type B (2B)</h2>
+                            <p class="card-text">
+                              A humanoid combat android created as part of the YoRHa squadron, 
+                              her mission is to liberate Earth from hostile machine lifeforms 
+                              created by an unnamed alien race. Her Type B designation indicates 
+                              that she specializes in front-line combat, and she is able to wield 
+                              two weapons and use a large variety of combat styles. 
+                            </p>
+                            <p>
+                              Her personality is cold, collected, and quick-thinking in dire situations, 
+                              a trait of her model line that was inherited from her predecessor A2, 
+                              whom she resembles perfectly. She disdains open displays of emotion, 
+                              believing them to be unnecessary, although she hides emotional trauma 
+                              and anger over the missions she is forced to complete.
+                            </p>
+                            <hr>
+                            <p>Contributed by- PolisanTheEasyNick</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample 2B card end-->
+            <!--Add your card below this line -->
 
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                      <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                      <img src="./images/Demon Sly.jpg" alt="Akaza" height="390px" width="300px">
+                      </div>
+                       <div class="col-md-8">
+                       <div class="card-body">
+                         <h2 class="card-title">Akaza</h2>
+                           <p class="card-text">
+                             Akaza from Demon Slayer is perhaps the best-written villain in the series.
+                             Akaza's personality has numerous complexities and contradictions that define him.
+                             He is exceptionally polarizing in the fandom.
+                           </p>
+                           <p>
+                            Anime-only fans hate Akaza because he killed Rengoku during the Mugen Train arc.
+                            However, a single incident is not enough to entirely judge his character.
+                          </p>
+                          <hr>
+                        <p>Contributed by- Abhinav Goyal</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Sample [Character Name] card end-->
+<!--Add your card below this line -->
+
+    
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/Episode_23.webp" alt="Shoto Todorok" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Shoto Todoroki</h2>
+                                <p class="card-text">
+                                    Shoto Todoroki (轟とどろき焦しょう凍と Todoroki Shōto?), also known as Shoto (ショート Shōto?), is the tritagonist of the My Hero Academia manga and anime series.
+                                </p>
+                                <p>
+                                    He is a student in Class 1-A at U.A. High School, where he got in through official recommendations[3] and is training to become a Pro Hero. He is the youngest son of Endeavor, the former No. 2, and current No. 1, Pro Hero.
+                                </p>
+                                <hr>
+                                <p>Contributed by- Barmendu Chakraborty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
+
+
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/8ykvjxfbyd691.webp" alt="Kokushibo" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Kokushibo</h2>
+                                <p class="card-text">
+                                    Kokushibo (黒こく死し牟ぼう Kokushibō?) is a major supporting antagonist of Demon Slayer: Kimetsu no Yaiba. He is a demon affiliated with the Twelve Kizuki, holding the highest position, Upper Rank One (上じょう弦げんの壱いち Jōgen no Ichi?).[2]
+                                </p>
+                                <p>
+                                    Nearly five centuries ago during the Sengoku Era, Kokushibo was once a human by the name of Michikatsu Tsugikuni (継つぎ国くに 巌みち勝かつ Tsugikuni Michikatsu?),[3] a former Demon Slayer[4] and the older twin brother of Yoriichi Tsugikuni,[5] the strongest Demon Slayer that ever existed.
+
+                                    Kokushibo is also the ancestor of Muichiro Tokito and Yuichiro Tokito[6] and the one responsible for turning Zenitsu Agatsuma's senior, Kaigaku, into a demon and joining the Twelve Kizuki.[
+                                </p>
+                                <hr>
+                                <p>Contributed by- Barmendu Chakraborty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
+                                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/asta.jpeg" alt="Asta" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Asta</h2>
+                                <p class="card-text">Asta (Japanese: アスタ, Hepburn: Asuta) is a fictional character
+                                    and the main protagonist of the manga series Black Clover created by Yūki Tabata.
+                                    He is cheerful, hyperactive, strong willed and muscle-building addict from Hage village
+                                    </p>
+                                <p>A peasant orphan who was left at a church, he aspires to become the next Wizard King.
+                                    He has no magical power, but overcame this through intense physical training which allow 
+                                    him to wield anti-magic swords from a five-leaf clover grimoire in which a devil resides.
+                                    He then becomes a Magic Knight, joining the Black Bulls squad in hopes of achieving his dream.
+                                   </p>
+                                <hr>
+                                <p>Contributed by- Sooraj Gk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
 
             </div>
         </main>
@@ -3272,6 +3511,15 @@
         <script>
             function darkMode() {
                 var element = document.body;
+                const btn = document.getElementById('btn');
+                if(btn.classList.contains("btn-outline-dark")){
+                    btn.classList.remove("btn-outline-dark");
+                    btn.classList.add("btn-outline-light");
+                }
+                else{
+                    btn.classList.add("btn-outline-dark");
+                }
+                
                 element.classList.toggle("dark-mode");
             }
         </script>
