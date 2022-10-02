@@ -18,6 +18,14 @@
 </head>
 
 <style>
+    :root{
+        --col1:blue;
+        --col2:black;
+    }
+    h2.card-title{
+        color:var(--col2);
+    }
+
     .to-top {
         color: #fff;
         position: fixed;
@@ -53,6 +61,8 @@
     .dark-mode {
         background-color: black;
         color: white;
+        --col1:white;
+        --col2:white;
     }
 </style>
 
@@ -64,7 +74,7 @@
     <div class="loader">
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: blue;">AnimePedia</a>
+                <a class="navbar-brand brand1 ml-4" href="#" style="color: var(--col1);">AnimePedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -83,7 +93,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="./index.html" style="color: blue;">Home</a>
+                            <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
                         </li>
                         <!-- <li class="nav-item mx-4">
                             <a class="nav-link" href="./about.html" style="color: beige;">About</a>
@@ -130,7 +140,7 @@
             </div>
 
             <p align="center">
-            <h1 style="color: blue;">All Anime Characters</h1>
+            <h1 style="color: var(--col1);">All Anime Characters</h1>
             </p>
             <hr width="70%">
 
