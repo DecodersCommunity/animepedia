@@ -56,6 +56,12 @@
         color: #fff;
         text-decoration: none;
     }
+    .search .icon::after{
+        background: rgb(90, 90, 93);
+    }
+    .search .icon::before{
+        border: 3px solid rgb(90, 90, 93);
+    }
 </style>
 
 <style>
@@ -75,14 +81,16 @@
     <div class="loader">
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: var(--col1);">AnimePedia</a>
+
+                <a class="navbar-brand brand1 ml-4" href="#" style="color: rgb(90, 90, 93);">AnimePedia</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="search">
+                <div class="search" style="border: 1px solid rgb(90, 90, 93);">
                     <div class="icon"></div>
                     <div class="input">
                         <input type="text" placeholder="search" id="mysearch">
@@ -94,7 +102,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
+
+                            <a class="nav-link" href="./index.html" style="color: rgb(90, 90, 93);">Home</a>
+
                         </li>
                         <!-- <li class="nav-item mx-4">
                             <a class="nav-link" href="./about.html" style="color: beige;">About</a>
@@ -141,7 +151,9 @@
             </div>
 
             <p align="center">
-            <h1 style="color: var(--col1);">All Anime Characters</h1>
+
+            <h1 style="color: rgb(90, 90, 93);">All Anime Characters</h1>
+
             </p>
             <hr width="70%">
 
