@@ -98,7 +98,7 @@ body {
   }
   
   .activated {
-    width: 360px;
+    width: 260px;
   }
   
   .search .icon {
@@ -138,7 +138,7 @@ body {
     position: relative;
     width: 300px;
     height: 48px;
-    left: 48px;
+    padding-left: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,8 +500,11 @@ body {
     .nav-link{
       margin-left: 45%;
     }
-    .search {
+    /* .search {
       left: 200px;
+    } */
+    .search .input input {
+      left: 70px;
     }
     .about-title b {
       line-height: 2.5rem;

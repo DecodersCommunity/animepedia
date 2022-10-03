@@ -74,7 +74,7 @@
     </a>
 
     <div class="loader">
-        <header>
+        <!-- <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
                 <a class="navbar-brand brand1 ml-4" href="#" style="color: var(--col1);">AnimePedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -90,31 +90,67 @@
                     </div>
 
                     <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
-                    <!-- Search Result DIV for search Suggestion  -->
+                   
                     <div class="search-results">
                     </div>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active mx-4">
                             <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
                         </li>
-                        <!-- <li class="nav-item mx-4">
-                            <a class="nav-link" href="./about.html" style="color: beige;">About</a>
-                        </li> -->
+                     
                         <li>
                             <div class="theme-btn">
                                 <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
                                         class="bi bi-brightness-low"></i></button>
                             </div>
                         </li>
+                        
                     </ul>
 
-                </div>
+             
             </nav>
 
-        </header>
+        </header> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">AnimePedia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <div class="theme-btn">
+                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
+                                class="bi bi-brightness-low"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input">
+                            <input type="text" placeholder="search" id="mysearch">
+                        </div>
+    
+                        <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+                       
+                        <div class="search-results">
+                        </div>
+                    </div>
+                </li>
+                
+                
+              
+              </ul>
+              
+            </div>
+          </nav>
 
         <main>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
