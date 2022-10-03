@@ -1,7 +1,6 @@
 body {
     font-family: "Ninja Naruto", arial;
   }
-
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -15,7 +14,21 @@ body {
     background: #ffb732;
     border-radius: 1rem;
 }
+img{
+  filter:grayscale(100%);
+  filter: blur(100%);
+  transition: .5s;
+}
+img:hover{
+  filter: grayscale(0%);
 
+}
+.carousel-control-prev{
+  background:#000
+}
+.carousel-control-next{
+  background:#000
+}
 /* Dark Mode Switch CSS */
   
   .switch-container{
@@ -256,7 +269,6 @@ body {
     color: black;
   }
   body {
-    background-color: white;
     font-weight: bold;
     text-align: justify;
   }
