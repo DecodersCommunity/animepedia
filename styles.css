@@ -16,6 +16,12 @@ body {
     border-radius: 1rem;
 }
 
+.main_page{
+  opacity: 0;
+  display: none;
+  overflow: hidden;
+}
+
 /* Dark Mode Switch CSS */
   
   .switch-container{
