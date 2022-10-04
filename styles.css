@@ -151,6 +151,7 @@ body {
     border: none;
     outline: none;
     font-size: 18px;
+    color: black;
   }
   
   .clear {
@@ -232,7 +233,7 @@ body {
   h1 {
     color: black;
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     margin-bottom: 40px;
     line-height: 14pt;
   }
@@ -340,13 +341,12 @@ body {
   }
   body {
     background-color: white;
-    font-family: "Righteous", cursive;
     font-weight: bold;
   }
   h1 {
     color: black;
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     margin-bottom: 40px;
     line-height: 14pt;
   }
@@ -499,3 +499,12 @@ body {
      z-index: 2000;
      border: none;
   } 
+
+  .container{
+    height: 64vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }

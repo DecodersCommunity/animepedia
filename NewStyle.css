@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  body::before{
+    content:"";
+    background: url("./assets/Background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.3);
+  }
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.nav-ul1
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-ul1 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.nav-ul1 ul li{
+    list-style: none;
+    align-self: center;
+}
+.nav-ul1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-ul1 ul li a:focus{
+    color: white;
+}
+
+.maindiv{
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.mainleft{
+    /* width: 59%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.mainright
+{
+    width: 40%;
+    right: 3vw;
+}
+.mainright #zenitsu{
+    width: 100%;
+}
+.mainright #zenitsu-shadow{
+    width: 100%;
+    filter:invert(1)
+}
+#navtitle:focus{
+    color: white !important;
+}
