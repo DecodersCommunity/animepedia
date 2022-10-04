@@ -38,12 +38,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 4px ??? black;
 }
 
-.main_page{
-  opacity: 0;
-  display: none;
-  overflow: hidden;
-}
-
 /* Dark Mode Switch CSS */
   
   .switch-container{
