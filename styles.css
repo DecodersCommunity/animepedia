@@ -15,9 +15,10 @@ body {
     background: #ffb732;
     border-radius: 1rem;
 } */
+
 /*Gradient scroll bar */
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 7px;
 }
 .card:hover {
   background-color: rgb(132, 94, 144);
