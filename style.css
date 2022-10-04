@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+:root{
+    --eye-size:100px;
+    --eye-backcolor:#AD0000;
+    --eye-color:#000;
+    --eye-shadow:#adadad59;
+    --eye-ball-shadow:rgb(27,27,27);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: serif; 
+}
+
+/* body{
+    background-color: #000;
+
+} */
+
+.loader_page{
+    /* padding: 10px 0 10px ; */
+    opacity: 1;
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 200%;
+}
+
+/* h2{
+    text-align: center;
+    color:var(--eye-backcolor);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom: 100px;
+
+} */
+.text_container h2{
+    margin-top: 5%;
+    margin-left: 45%;
+    width: fit-content;
+    background-color: transparent;
+    font-size: 2em;
+    font-family: 'Silkscreen', cursive;
+    align-items: center;
+    justify-content: center;
+    color:var(--eye-backcolor);
+    padding-bottom: 10px;
+}
+.cards{
+    /* background-color: white; */
+    width: 500px;
+    height: 100%;
+    margin-top: 18%;
+    margin-left: 36%;
+    padding-top: 10px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow: hidden;
+    /* position: absolute; */
+    /* left: 38%; */
+    justify-content: space-between;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.center{
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.eye{
+    height: var(--eye-size);
+    width: var(--eye-size);
+    background-color: var(--eye-backcolor);
+    border: 6px solid var(--eye-color);
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    animation: animation1 7s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+.eye-ball{
+    height: 55%;
+    width: 55%;
+    position:relative;
+    background-color: transparent;
+    top: 50%;
+    transform: translate(38%, -50%);
+}
+
+.eye-ball>div:first-of-type{
+    height: 100%;
+    width: 100%;
+    /* background-color: aliceblue; */
+    border: 4px solid var(--eye-color);
+    opacity: .5;
+    position: relative;
+    
+}
+
+.eye-ball>div:nth-of-type(2){
+    position: relative;
+    height: 45%;
+    width: 45%;
+    background-color: var(--eye-color);
+    box-shadow: 0 0 21px 4px var(--eye-ball-shadow);
+    top: -50%;
+    left: 50%;
+}
+
+.sp{
+    height: 50%;
+    width: 50%;
+    font-size: 70px;
+    position: absolute;
+}
+
+.sp span{
+    font-weight: bolder;
+    position: absolute;
+    display: block;
+    top: -44px;
+    color: var(--eye-color);
+}
+
+.eye-ball>div:nth-of-type(3){
+    top: -76%;
+    left: 68%;
+    transform: rotate(243deg);
+}
+
+.eye-ball>div:nth-of-type(4){
+    bottom: -69%;
+    right: -40%;
+    transform: rotate(0deg);
+}
+
+.eye-ball>div:last-of-type{
+    bottom: 3%;
+    left: -97%;
+    transform: rotate(112deg);
+}
+
+
+/* animation */
+
+@keyframes animation1{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    70%,100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.sharingan1{
+    animation: animation1 14s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+
+/* sharingan2 */
+
+/* .sharingan1,.sharingan2{
+    display: none;
+} */
+
+.sharingan2 .sp{
+    width: 100%;
+    height: 100%;
+    font-size: 165px;
+}
+
+.sharingan2 .eye-ball>div:first-of-type{
+    opacity: 1;
+    background-color: var(--eye-color);
+    width: 85%;
+    height: 85%;
+    margin: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sharingan2 .eye-ball>div:nth-of-type(2){
+    background-color: var(--eye-backcolor);
+    top: -135%;
+    height: 25%;
+    width: 25%;
+    z-index: 10;
+}
+.sharingan2 .eye-ball>div:nth-of-type(3){
+    top: -120%;
+    left: 35%;
+}
+
+.sharingan2 .eye-ball>div:nth-of-type(4){
+    top: 13%;
+    left: 45%;
+}
+
+.sharingan2 .eye-ball>div:last-of-type{
+    top: -33%;
+    left: -77%;
+}
+
+.sharingan2{
+    animation: animation1 14s ease-in-out infinite;
+    /* animation-fill-mode: forwards; */
+}
+
+
+
+/* animation from sharingan1 to sharingan2 */
+
+.sharingan1to2 .eye-ball>div{
+    animation-duration:14s ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
+.sharingan1to2{
+    animation: animation1 10s ease-in-out infinite;
+    animation-fill-mode: both;
+}
+
+
+
+
+.sharingan1to2 .eye-ball>div:first-of-type{
+    animation-name: an_div_first;
+}
+
+.sharingan1to2 .eye-ball>div:nth-of-type(2){
+    animation-name: an_div_2;
+}
+.sharingan1to2 .eye-ball>div:nth-of-type(3){
+    animation-name: an_div_3;
+}
+
+.sharingan1to2 .eye-ball>div:nth-of-type(4){
+    animation-name: an_div_4;
+}
+
+.sharingan1to2 .eye-ball>div:last-of-type{
+    animation-name: an_div_last;
+}
+
+
+
+
+
+
+
+
+
+@keyframes an_div_first{
+    0%,20%,100%{
+        /* sharingan1 style */
+        height: 100%;
+        width: 100%;
+        /* background-color: var(--eye-backcolor); */
+        border: 4px solid var(--eye-color);
+        opacity: .5;
+        position: absolute;
+    }
+    40%,70%{
+        /* sharingan2 style */
+        opacity: 1;
+        background-color: var(--eye-color);
+        width: 85%;
+        height: 85%;
+        margin: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+    }
+}
+
+@keyframes an_div_2{
+    0%,20%,100%{
+        height: 45%;
+        width: 45%;
+        background-color: var(--eye-color);
+        top: 50%;
+        left: 50%;
+        z-index: auto ;
+    }
+    40%,70%{
+        background-color: var(--eye-backcolor);
+        top: 49%;
+        height: 25%;
+        width: 25%;
+        z-index: 10;
+    }
+}
+
+@keyframes an_div_3 {
+    0%,20%,100%{
+        top: -76%;
+        left: 68%;
+        font-size: 70px;
+    }
+    40%,70%{
+        top: -89%;
+        left: 30%; 
+        width: 100%;
+        height: 100%;
+        font-size: 165px;
+    }
+}
+
+@keyframes an_div_4{
+    0%,20%,100%{
+        bottom: -69%;
+        right: -40%;
+        height: 50%;
+        width: 50%;
+        font-size: 70px;
+    }
+    40%,70%{
+        top: 67%;
+        left: 61%;
+        width: 100%;
+        height: 100%;
+        font-size: 165px;
+    }
+}
+
+@keyframes an_div_last{
+    0%,20%,100%{
+        bottom: 3%;
+        left: -94%;
+        height: 50%;
+        width: 50%;
+        font-size: 70px;
+    }
+    40%,70%{
+        top: 25%;
+        left: -77%;
+        width: 100%;
+        height: 100%;
+        font-size: 165px;
+    }
+}
+
+
+/* apply animation */
+
