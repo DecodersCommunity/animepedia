@@ -1,5 +1,6 @@
 body {
     font-family: "Ninja Naruto", arial;
+    overflow-x: hidden;
   }
 
 /* Custom Scroll Bar */
@@ -34,9 +35,9 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
     border-radius: 8px;
 }
-.box {
+/* .box {
   box-shadow: 0px 0px 4px ??? black;
-}
+} */
 
 /* Dark Mode Switch CSS */
   
@@ -523,14 +524,23 @@ body::-webkit-scrollbar-thumb {
       margin-left: 45%;
     }
     .search {
-      left: 200px;
+      left: 0;
+      width: 100%;
     }
     .about-title b {
       line-height: 2.5rem;
     }
   }
   
-  
+
+  /* table device */
+  @media (min-width: 481px) and (max-width: 710px) {
+    
+    .search {
+      left: 0;
+      width: 100%;
+    }
+  }
   
   ul.navbar-nav.mr-auto {
     position: absolute;
