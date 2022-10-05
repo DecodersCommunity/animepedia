@@ -6,7 +6,7 @@ There is no doubt that most of our childhood was spent watching anime, we have s
 
 Website: [AnimePedia](https://bit.ly/AnimePedia)
 
-This respositoy is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+This respository is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
 
 Note: <i>This repository is created with the sole intent of guiding beginners to their initial Open Source contributions.</i>
 
