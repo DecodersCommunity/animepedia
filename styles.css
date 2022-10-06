@@ -592,3 +592,15 @@ body::-webkit-scrollbar-thumb {
      z-index: 2000;
      border: none;
   } 
+
+  .disable{
+    background: #ccc;
+  }
+
+  .hidden{
+    display: none;
+  }
+  
+  .pagination{
+    justify-content: center;
+  }
