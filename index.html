@@ -47,13 +47,33 @@
         transition: all 0.4s;
     }
 
-    .to-top.active {
+    .bottom {
+        color: #fff;
+        position: fixed;
+        top: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 10;
+    }
+
+    .to-top.active, .bottom.active{
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
     }
 
-    .to-top:hover {
+    .to-top:hover, .bottom:hover{
         color: #fff;
         text-decoration: none;
     }
@@ -72,6 +92,10 @@
     <a href="#" class="to-top">
         <i class="fa fa-arrow-up"></i>
     </a>
+
+    <button class="bottom">
+        <i class="fa fa-arrow-down"></i>
+    </button>
 
     <div class="loader">
 
@@ -5695,6 +5719,12 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
         /* ------- Scroll To Top Button -------*/
 
         const toTop = document.querySelector(".to-top");
+        const toBottom = document.querySelector(".bottom");
+        if (document.documentElement.scrollTop<document.documentElement.scrollHeight-1000) {
+                toBottom.classList.add("active");
+            } else {
+                toBottom.classList.remove("active");
+            }
         window.addEventListener("scroll", () => {
 
             if (window.pageYOffset > 400) {
@@ -5702,8 +5732,22 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             } else {
                 toTop.classList.remove("active");
             }
-
+            if (document.documentElement.scrollTop<document.documentElement.scrollHeight-1000) {
+                toBottom.classList.add("active");
+            } else {
+                toBottom.classList.remove("active");
+            }
+            
         });
+        
+        function scrollToBottom(){
+            console.log(document.documentElement.scrollTop, document.documentElement.scrollHeight);
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behaviour: "smooth"
+            })
+        }
+        toBottom.addEventListener("click", scrollToBottom);
     </script>
 
 
