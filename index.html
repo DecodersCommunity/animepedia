@@ -74,45 +74,38 @@
     </a>
 
     <div class="loader">
+
+        <!-- Changed Navbar Content and Search box below the navbar -->
+
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: var(--col1);">AnimePedia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between" id="navBackground">
+                <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">AnimePedia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="search" id="mysearch">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
+                    <div class="theme-btn nav-link">
+                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
+                                class="bi bi-brightness-low"></i></button>
                     </div>
-
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
-                    <!-- Search Result DIV for search Suggestion  -->
-                    <div class="search-results">
-                    </div>
+                  </div>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active mx-4">
-                            <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
-                        </li>
-                        <!-- <li class="nav-item mx-4">
-                            <a class="nav-link" href="./about.html" style="color: beige;">About</a>
-                        </li> -->
-                        <li>
-                            <div class="theme-btn">
-                                <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
-                                        class="bi bi-brightness-low"></i></button>
-                            </div>
-                        </li>
-                    </ul>
-
+                
+              </nav>
+              <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="search" id="mysearch">
                 </div>
-            </nav>
+
+                <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+                <!-- Search Result DIV for search Suggestion  -->
+                <div class="search-results">
+                </div>
+            </div>
 
         </header>
     </div>
@@ -177,6 +170,7 @@
                             </p>
                             <hr>
                             <p>Contributed by- Raunak Agarwal</p>
+                        
                         </div>
                     </div>
                 </div>
@@ -277,6 +271,34 @@
                             </p>
                             <hr>
                             <p>Contributed by- Narendra Mohan Pathak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/teruMikami.png" alt="Teru mikami" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Teru Mikami</h2>
+                            <p class="card-text">
+                                Teru Mikami had an amazing sense of justice since he was a young child. When he was in
+                                elementary school he decided that as the president of his class it was up to him to
+                                protect his innocent classmates from bullies even if he gets hurt.
+                            </p>
+                            <p>
+                                Teru Mikami is a young male in his mid twenties. He is 5'9" with black shoulder length
+                                hair. Teru's attire typically consist of glasses, black or dark blue business suits and
+                                an overcoat
+                            </p>
+                            <hr>
+                            <p>Contributed by-Priyanshi Dhanuka</p>
                         </div>
                     </div>
                 </div>
@@ -607,33 +629,58 @@
             <!--Sample Monkey D. Luffy card and...-->
             <!--Add your card below this line -->
 
-
-
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/madara.jpg" alt="Uchiha Madara" height="390px" width="300px">
+                        <img src="./images/killua zoldyck.jpg" alt="killua zoldyck" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h2 class="card-title">Uchiha Madara</h2>
+                            <h2 class="card-title">KILLUA ZOlDYCK</h2>
                             <p class="card-text">
-                                Madara Uchiha (うちはマダラ，Uchiha Madara) was the legendary leader of the Uchiha clan. He
-                                founded Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the
-                                intention of beginning an era of peace.
+                                Kirua Zorudikku) is the third child of Silva and Kikyo Zoldyck and the heir of the
+                                Zoldyck Family, until he runs away.
                             </p>
                             <p>
-                                When the two couldn't agree on how to achieve that peace, they fought for control of the
-                                village, a conflict which ended in Madara's death. Madara, however, rewrote his death
-                                and went into hiding to work on his own plans. Unable to complete it in his
-                                natural life, he entrusted his knowledge and plans to Obito shortly before his actual
-                                death.
+                                Soon after Togashi's tweet started going viral and was confirmed to be authentic, Megumi
+                                Han and Mariya Ise both shared iconic artwork from the manga. The two seiyuu (Japanese
+                                voice actors and actresses) started voicing Gon and Killua with the 2011 anime
+                                remake.24-May-2022
                             </p>
                             <hr>
-                            <p>Contributed by- Evilseye</p>
+                            <p>Contributed by- AYUSHI SRIVASTAVA</p>
                         </div>
-
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./images/whitebeard.jpg" alt="Edward Newgate" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Edward Newgate (Whitebeard)</h2>
+                            <p class="card-text">
+                                Edward Newgate, more commonly known as "Whitebeard", was the captain of the
+                                Whitebeard Pirates and was widely known as the "Strongest Man in the World" and,
+                                after Gol D. Roger's death, the "Man Closest to One Piece".
+                            </p>
+                            <p>
+                                Before forming his own crew, Newgate was an orphan hailing from the island of
+                                Sphinx. During his tenure as a pirate, he was a known member of the legendary Rocks
+                                Pirates and later in life became part of the Four Emperors that rule over the New
+                                World, before his death in the Summit War of Marineford.In his prime, Whitebeard was
+                                a rival to Gol D. Roger, and following Roger's death, was widely recognized as the
+                                strongest man in the world, a fact complimented by having the highest active bounty
+                                whilst alive, and the second highest bounty of any pirate in history.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Ayush Uttam</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -836,6 +883,43 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/escanor.jpg" alt="Escanor" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Escanor</h2>
+                            <p class="card-text">
+                                Escanor 「エスカノール」 is the main character of the anime Seven deadly sins.
+                                Escanoris the Lion's Sin of Pride「傲慢の罪ライオン・シン, Raion Shin」 of the Seven
+                                Deadly Sins, the former second prince of the Kingdom of Castellio, and the
+                                man known throughout the Kingdom of Liones as "The Strongest Holy Knight".
+                                His Sacred Treasure is the Divine Axe, Rhitta, and his inherent power is called
+                                Sunshine, which made him renowned for gaining immense power during the day, and
+                                gradually becoming weaker with the setting of the sun, leaving him frail and
+                                submissive at night.
+                            <p>
+                                Escanor's personality changes drastically along with his strength between day
+                                and night. At night, he is skittish, submissive and unfailingly polite. Whereas
+                                in the day he is arrogant, boastful, and domineering, he also takes it upon
+                                himself to deliver judgment to those he feels have sinned, such as those that toy
+                                with feelings. Both personalities seem to be truly him, and he remembers everything
+                                he does in either, though at night he has chastised himself for losing control during
+                                the day.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Aman Singh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample escanor card end-->
+            <!--Add your card below this line -->
+
 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -3176,6 +3260,29 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
+                            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/TimMarcoh.png" alt="Tim Marcoh" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Tim Marcoh</h2>
+                            <p class="card-text">
+                              Dr. Marcoh is one of the oldest known alchemists of the series and as such has incredible knowledge regarding alchemy. His most notable knowledge is related to the creation of the Philosopher's Stone, knowledge given to him by the homunculi. After numerous experiments with their creation, he is also able to destroy them, an ability which proves effective when fighting Envy.
+                            </p>
+                            <p>
+                              Dr. Marcoh is one of the oldest known alchemists of the series and as such has incredible knowledge regarding alchemy. His most notable knowledge is related to the creation of the Philosopher's Stone, knowledge given to him by the homunculi. After numerous experiments with their creation, he is also able to destroy them, an ability which proves effective when fighting Envy.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Divyanshi Gupta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
 
 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -4482,44 +4589,6 @@
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Izuku Midoriya.jpg" alt="Izuku Midoriya" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Izuku Midoriya</h2>
-                            <p class="card-text">
-                                Izuku Midoriya (Japanese: 緑谷 出久, Hepburn: Midoriya Izuku), also known by his hero name
-                                Deku (Japanese: デク), is a superhero and the main protagonist of the manga series My Hero
-                                Academia, created by Kōhei Horikoshi. In the series, he is a nerdy and ambitious
-                                high schooler misfit and the 9th (and current) holder of "One For All" (ワン・フォー・オール, Wan
-                                Fō Ōru), a superpower which combines eight different individual superpowers, or
-                                "Quirks", together and creates powerful bursts of energy,
-                                and also has the unique ability to be passed off to other people.
-                            </p>
-                            <p>
-                                Initially born without a "quirk" to call his own, Izuku nevertheless grew up with
-                                aspirations to become a superhero in his own right. Nicknamed "Deku" by childhood
-                                classmate and middle school bully - Katsuki Bakugo, Izuku would later save him from a
-                                villain,
-                                in turn winning over the interest of All Might, Izuku's childhood idol and #1 hero, who
-                                in turn passes down his sacred One For All quirk to him. After being accepted into U.A.
-                                High School, Izuku's classmate Ochaco Uraraka
-                                inspires him to embrace his nickname and use it as his hero name.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Tanishk Sharma </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Sample Izuku Midoriya end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Gyutaro.jpg" alt="Gyutaro" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
@@ -5127,6 +5196,31 @@
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Shigeo_kageyama.webp" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Kazuya Kinoshita</h2>
+                            <p class="card-text">
+                                Shigeo Kageyama, otherwise known as by his nickname Mob, is the titular main protagonist
+                                of the anime and webcomic/manga series, Mob Psycho 100. He's a powerful esper with vast
+                                powers and is the assistant and disciple to Arataka Reigen and is the newest member of
+                                the Body Improvement Club.
+                            </p>
+
+                            <hr>
+                            <p>Contributed by- Uday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Shigeo Kageyama] card end-->
+
+            <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Izuku Midoriya.jpg" alt="Izuku Midoriya" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
@@ -5194,7 +5288,7 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
@@ -5278,21 +5372,54 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Kyo Sohma.jpg" alt="Kyo Sohma" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Kyo Sohma</h2>
+                            <p class="card-text">
+                                Kyo Sohma is one of the main character of Fruits Basket anime/manga series and cursed by
+                                the spirit of the cat of the zodiac. He is the love interest & husband of Tohru Honda.
+                            </p>
+                            <p>
+                                He transforms into an orange cat whenever he is hugged by a member of the opposite
+                                gender or if he is under a great deal of stress. The cat is not an animal in the Chinese
+                                Zodiac, but legend has it that the cat may have been included had the rat not tricked
+                                it. As a result, he and Yuki Sohma (the rat) do not get along well, since Kyo blames
+                                Yuki for all his misfortune and mistreatment, and drove him to made a deal with Akito
+                                Sohma that if he could beat Yuki, he would not be confined to the Cat's Room.
+                            </p>
+                            <hr>
+                            <p>Contributed by-mketters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--[Kyo Sohma] card end-->
+            <!--Add your card below this line -->
 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Kenta12-0.webp" alt="Kenta Yumiya" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Kenta Yumiya</h2>
                             <p class="card-text">
-                              Kenta Yumiya (湯宮ケンタ / 湯宮健太, Yumiya Kenta) is one of the main characters of the Metal Saga anime and manga series and arguably the tritagonist of the saga overall.
+                                Kenta Yumiya (湯宮ケンタ / 湯宮健太, Yumiya Kenta) is one of the main characters of the Metal
+                                Saga anime and manga series and arguably the tritagonist of the saga overall.
                             </p>
                             <p>
-                              He is one of Gingka Hagane's friends and goes to many lengths to support him. He is also friends with Madoka Amano, Benkei Hanawa, Yu Tendo, Tsubasa Otori, Kyoya Tategami and Ryuga. Kenta was formerly the owner of Flame Sagittario C145S and currently owns Flash Sagittario 230WD.
+                                He is one of Gingka Hagane's friends and goes to many lengths to support him. He is also
+                                friends with Madoka Amano, Benkei Hanawa, Yu Tendo, Tsubasa Otori, Kyoya Tategami and
+                                Ryuga. Kenta was formerly the owner of Flame Sagittario C145S and currently owns Flash
+                                Sagittario 230WD.
                             </p>
                             <hr>
                             <p>Contributed by- Nezuko Chan</p>
@@ -5306,17 +5433,22 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/100px-CilanBW.png" alt="Cilan" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Cilan</h2>
                             <p class="card-text">
-                              Cilan (Japanese: デント Dent) is an A-class Pokémon Connoisseur and a former traveling companion of Ash. He made his debut in Triple Leaders, Team Threats!.
+                                Cilan (Japanese: デント Dent) is an A-class Pokémon Connoisseur and a former traveling
+                                companion of Ash. He made his debut in Triple Leaders, Team Threats!.
                             </p>
                             <p>
-                              Cilan grew up with two brothers, Chili and Cress, in their hometown of Striaton City. At some point during their childhood, Cilan received a Pansage as his starter Pokémon and partner, while Chili and Cress received a Pansear and Panpour, respectively. Years later, Cilan and his brothers became the Striaton Gym Leaders while also running a café together
+                                Cilan grew up with two brothers, Chili and Cress, in their hometown of Striaton City. At
+                                some point during their childhood, Cilan received a Pansage as his starter Pokémon and
+                                partner, while Chili and Cress received a Pansear and Panpour, respectively. Years
+                                later, Cilan and his brothers became the Striaton Gym Leaders while also running a café
+                                together
                             </p>
                             <hr>
                             <p>Contributed by- Nezuko Chan</p>
@@ -5330,17 +5462,23 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Kanao_anime.webp" alt="Kanao Tsuyuri" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Kanao Tsuyuri</h2>
                             <p class="card-text">
-                              Kanao Tsuyuri (栗つ花ゆ落り カナヲ Tsuyuri Kanao?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. She is a Demon Slayer of the Demon Slayer Corps, Shinobu Kocho's Tsuguko and the adopted sister of Shinobu and Kanae Kocho.
+                                Kanao Tsuyuri (栗つ花ゆ落り カナヲ Tsuyuri Kanao?) is a major supporting character of Demon
+                                Slayer: Kimetsu no Yaiba. She is a Demon Slayer of the Demon Slayer Corps, Shinobu
+                                Kocho's Tsuguko and the adopted sister of Shinobu and Kanae Kocho.
                             </p>
                             <p>
-                              Kanao is a short, young girl with large, gentle eyes of a dark lilac color that are framed by thick eyelashes. She has thin black hair, worn tied into a ponytail on the right side of her head and fastened by a pink and green butterfly ornament that once belonged to her adoptive sister, Kanae Kocho.[3] She has a straight fringe and two loose, chin-length strands that curve downwards from above each of her ears.
+                                Kanao is a short, young girl with large, gentle eyes of a dark lilac color that are
+                                framed by thick eyelashes. She has thin black hair, worn tied into a ponytail on the
+                                right side of her head and fastened by a pink and green butterfly ornament that once
+                                belonged to her adoptive sister, Kanae Kocho.[3] She has a straight fringe and two
+                                loose, chin-length strands that curve downwards from above each of her ears.
                             </p>
                             <hr>
                             <p>Contributed by- Nezuko Chan</p>
@@ -5354,17 +5492,24 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Mello.webp" alt="Mello" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Mello</h2>
                             <p class="card-text">
-                              Mello (メロ, Mero) is the older of L's two successors raised at Wammy's House, Watari's orphanage for gifted children in Winchester, England. When Roger asks that Mello and Near work together to capture Kira, Mello refuses, pointing out the differences between them. He leaves the orphanage soon after and eventually seeks help from the Mafia.
+                                Mello (メロ, Mero) is the older of L's two successors raised at Wammy's House, Watari's
+                                orphanage for gifted children in Winchester, England. When Roger asks that Mello and
+                                Near work together to capture Kira, Mello refuses, pointing out the differences between
+                                them. He leaves the orphanage soon after and eventually seeks help from the Mafia.
                             </p>
                             <p>
-                              Mello is a young man with chin-length golden-blond hair and blue eyes. His bangs hang down just over his eyebrows, and he stands at about average height. He later gains a large scar, which begins somewhere between his shoulder and waist and extends up to just between his nose and left eye, after initiating an explosion in the Mafia hideout in order to escape being captured. Mello is usually seen wearing dark leather clothes.
+                                Mello is a young man with chin-length golden-blond hair and blue eyes. His bangs hang
+                                down just over his eyebrows, and he stands at about average height. He later gains a
+                                large scar, which begins somewhere between his shoulder and waist and extends up to just
+                                between his nose and left eye, after initiating an explosion in the Mafia hideout in
+                                order to escape being captured. Mello is usually seen wearing dark leather clothes.
                             </p>
                             <hr>
                             <p>Contributed by- Nezuko Chan</p>
@@ -5374,22 +5519,32 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-		            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/rem image.jpg" alt="Rem" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Rem</h2>
                             <p class="card-text">
-                              Rem (レム) is a maid in service of margrave Roswaal L Mathers alongside her sister, Ram. She is one of the main supporting characters of Re:Zero, with major roles in Arc 2, Arc 3, and Arc 7. During the first half of Arc 2, she also served as the secondary antagonist.
+                                Rem (レム) is a maid in service of margrave Roswaal L Mathers alongside her sister, Ram.
+                                She is one of the main supporting characters of Re:Zero, with major roles in Arc 2, Arc
+                                3, and Arc 7. During the first half of Arc 2, she also served as the secondary
+                                antagonist.
                             </p>
                             <p>
-                             While initially distrustful of Subaru, she eventually opened up to him and even developed strong feelings for him after he saved her. However, at the end of Arc 3, she had her name and memories eaten by Lye Batenkaitos and subsequently fell into suspended animation. 
-				    At the end of Arc 6, she finally woke up from her slumber following Lye's death, but now suffers amnesia due to not having yet regained her memories. She was been transported to the Sacred Empire of Vollacia with Subaru and Louis Arneb at end of Arc 6.
-                             Though Vincent, Subaru, Al and others left for the Demon City of Chaosflame, she stayed behind in Guaral in order to be tutored by Priscilla Barielle in how to better herself in the arts of Healing Magic.
+                                While initially distrustful of Subaru, she eventually opened up to him and even
+                                developed strong feelings for him after he saved her. However, at the end of Arc 3, she
+                                had her name and memories eaten by Lye Batenkaitos and subsequently fell into suspended
+                                animation.
+                                At the end of Arc 6, she finally woke up from her slumber following Lye's death, but now
+                                suffers amnesia due to not having yet regained her memories. She was been transported to
+                                the Sacred Empire of Vollacia with Subaru and Louis Arneb at end of Arc 6.
+                                Though Vincent, Subaru, Al and others left for the Demon City of Chaosflame, she stayed
+                                behind in Guaral in order to be tutored by Priscilla Barielle in how to better herself
+                                in the arts of Healing Magic.
                             </p>
                             <hr>
                             <p>Contributed by- [Pranjal Mishra]</p>
@@ -5399,6 +5554,7 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
+
 		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -5446,6 +5602,7 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
                 </div>
                 <!--Sample [Character Name] card end-->
                 <!--Add your card below this line -->
+
     </main>
 
 
@@ -5454,6 +5611,7 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
     <!-- Do not alter the code below this line unless you want to improve the website -->
 
     <!-- Do not alter the code below this line unless you want to improve the website -->
+
 
 
     <footer>
@@ -5491,16 +5649,26 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
     </script>
 
 
-    <script>
-        function darkMode() {
-            var element = document.body;
-            const btn = document.getElementById('btn');
-            if (btn.classList.contains("btn-outline-dark")) {
-                btn.classList.remove("btn-outline-dark");
-                btn.classList.add("btn-outline-light");
-            } else {
-                btn.classList.add("btn-outline-dark");
-            }
+        <script>
+            function darkMode() {
+                var element = document.body;
+
+                //Added bootstrap navbar class for dark and light mode
+                let navBackground = document.getElementById("navBackground");
+                let toggle = document.querySelector(".navbar-toggler");
+                const btn = document.getElementById('btn');
+                if (btn.classList.contains("btn-outline-dark")) {
+                    btn.classList.remove("btn-outline-dark");
+                    btn.classList.add("btn-outline-light");
+                    navBackground.classList.remove("bg-light")
+                    navBackground.classList.add("bg-dark")
+                    toggle.classList.add("custom-toggler")
+                }else {
+                    btn.classList.add("btn-outline-dark");
+                    navBackground.classList.add("bg-light")
+                    navBackground.classList.remove("bg-dark")
+                    toggle.classList.remove("custom-toggler")
+                }
 
             element.classList.toggle("dark-mode");
         }
