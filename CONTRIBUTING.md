@@ -10,6 +10,11 @@
   - Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
 - Create a working branch and start with your changes!
 
+## Design Guide
+
+- If you want to update the User Interface you can check out the [Design Guide](DESIGNGUIDE.md) for ideas.
+- You can also help improve the design guide!
+
 
 ## Contribution Flow
 

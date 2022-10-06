@@ -6,7 +6,7 @@ There is no doubt that most of our childhood was spent watching anime, we have s
 
 Website: [AnimePedia](https://bit.ly/AnimePedia)
 
-This respositoy is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
+This respository is maintained by: [Raunak Agarwal](https://github.com/Raunak173), [Amartya Yadav](https://github.com/iamartyaa) and [Barmendu Chakraborty](https://github.com/BarmenduC)
 
 Note: <i>This repository is created with the sole intent of guiding beginners to their initial Open Source contributions.</i>
 
@@ -26,7 +26,7 @@ Contributing to AnimePedia is a cake-walk as long as you follow the below steps 
 - `Fork` the repository
 - Download your favourite character's image and upload it to the `images` folder. Make sure you provide a valid name to your image file
 - Copy the Card template code given below & fill in the information as directed
-
+- Note: Copy & paste the entire code as it is after filling the details of the character!
 <!--Sample [Character Name] card start-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
