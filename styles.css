@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   
   .search {
     /* position: fixed; */
-    left: 10px;
+    left: 30px;
     height: 48px;
     width: 48px;
     background: #fff;
@@ -117,6 +117,10 @@ body::-webkit-scrollbar-thumb {
     /* box-shadow: 0 0 0 5px black; */
     /* overflow: hidden; */
     border: 1px solid #999;
+
+    /* Changed the position of search box */
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
   
   .activated {
@@ -499,6 +503,22 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(0) !important;
     opacity: 1;
   }
+
+
+  /* Made Changes for dark background navbar now toggle button appears in dark mode also */
+  /* Earlier toggle button was not visible in dark mode but now appears in Dark mode also */
+
+  #navbarNavAltMarkup{
+    padding-right: 80px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+  } 
   
   /* Mobile devices */
   @media (min-width: 320px) and (max-width: 480px) {
@@ -523,14 +543,28 @@ body::-webkit-scrollbar-thumb {
       margin-left: 45%;
     }
     .search {
-      left: 200px;
+      left: 1rem;
     }
     .about-title b {
       line-height: 2.5rem;
     }
+
+    .heading{
+      font-size: 2.5rem;
+      margin-left: 0;
+    }
+    #navbarNavAltMarkup{
+      padding-right: 0;
+    }
   }
   
-  
+
+  /* Adjusted the font size of All Anime Characters for small screen size */
+  @media(max-width:400px){
+    .text_heading{
+      font-size: 2rem;
+    }
+  }
   
   ul.navbar-nav.mr-auto {
     position: absolute;
