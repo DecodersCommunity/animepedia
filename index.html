@@ -74,45 +74,38 @@
     </a>
 
     <div class="loader">
+
+        <!-- Changed Navbar Content and Search box below the navbar -->
+
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: var(--col1);">AnimePedia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between" id="navBackground">
+                <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">AnimePedia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="search" id="mysearch">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
+                    <div class="theme-btn nav-link">
+                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
+                                class="bi bi-brightness-low"></i></button>
                     </div>
-
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
-                    <!-- Search Result DIV for search Suggestion  -->
-                    <div class="search-results">
-                    </div>
+                  </div>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active mx-4">
-                            <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
-                        </li>
-                        <!-- <li class="nav-item mx-4">
-                            <a class="nav-link" href="./about.html" style="color: beige;">About</a>
-                        </li> -->
-                        <li>
-                            <div class="theme-btn">
-                                <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
-                                        class="bi bi-brightness-low"></i></button>
-                            </div>
-                        </li>
-                    </ul>
-
+                
+              </nav>
+              <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="search" id="mysearch">
                 </div>
-            </nav>
+
+                <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+                <!-- Search Result DIV for search Suggestion  -->
+                <div class="search-results">
+                </div>
+            </div>
 
         </header>
     </div>
@@ -177,6 +170,7 @@
                             </p>
                             <hr>
                             <p>Contributed by- Raunak Agarwal</p>
+                        
                         </div>
                     </div>
                 </div>
@@ -6005,6 +5999,7 @@
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+
                         <img src="./images/AstroBoy.jpg" alt="AstroBoy" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
@@ -6022,13 +6017,15 @@
                             </p>
                             <hr>
                             <p>Contributed by- Ritika Khanduri</p>
+                    
+
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
+            
+                    <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
 
     </main>
 
@@ -6076,16 +6073,26 @@
     </script>
 
 
-    <script>
-        function darkMode() {
-            var element = document.body;
-            const btn = document.getElementById('btn');
-            if (btn.classList.contains("btn-outline-dark")) {
-                btn.classList.remove("btn-outline-dark");
-                btn.classList.add("btn-outline-light");
-            } else {
-                btn.classList.add("btn-outline-dark");
-            }
+        <script>
+            function darkMode() {
+                var element = document.body;
+
+                //Added bootstrap navbar class for dark and light mode
+                let navBackground = document.getElementById("navBackground");
+                let toggle = document.querySelector(".navbar-toggler");
+                const btn = document.getElementById('btn');
+                if (btn.classList.contains("btn-outline-dark")) {
+                    btn.classList.remove("btn-outline-dark");
+                    btn.classList.add("btn-outline-light");
+                    navBackground.classList.remove("bg-light")
+                    navBackground.classList.add("bg-dark")
+                    toggle.classList.add("custom-toggler")
+                }else {
+                    btn.classList.add("btn-outline-dark");
+                    navBackground.classList.add("bg-light")
+                    navBackground.classList.remove("bg-dark")
+                    toggle.classList.remove("custom-toggler")
+                }
 
             element.classList.toggle("dark-mode");
         }
