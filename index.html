@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>AnimePedia</title>
 </head>
 
@@ -22,6 +23,15 @@
     :root {
         --col1: blue;
         --col2: black;
+        --swiper-image-ratio: 34%; /* ratio 16:9 = 56.25% */
+
+  --swiper-width: 50%;
+  --swiper-inactive-scale: .85; /* makes the other slide smaller */
+  
+  /* responsive settings */
+  --swiper-mobile-width: 90%;
+  --swiper-mobile-inactive-scale: 1;
+
     }
 
     h2.card-title {
@@ -47,13 +57,33 @@
         transition: all 0.4s;
     }
 
-    .to-top.active {
+    .bottom {
+        color: #fff;
+        position: fixed;
+        top: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 10;
+    }
+
+    .to-top.active, .bottom.active{
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
     }
 
-    .to-top:hover {
+    .to-top:hover, .bottom:hover{
         color: #fff;
         text-decoration: none;
     }
@@ -63,7 +93,7 @@
     .dark-mode {
         background-color: black;
         color: white;
-        --col1: white;
+        --col1: #ffe15a;
         --col2: white;
     }
 </style>
@@ -73,12 +103,16 @@
         <i class="fa fa-arrow-up"></i>
     </a>
 
+    <button class="bottom">
+        <i class="fa fa-arrow-down"></i>
+    </button>
+
     <div class="loader">
 
         <!-- Changed Navbar Content and Search box below the navbar -->
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between" id="navBackground">
+        <header >
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" id="navBackground" style="background-color:#d7dee79c !important">
                 <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">AnimePedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -87,8 +121,8 @@
                   <div class="navbar-nav">
                     <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
                     <div class="theme-btn nav-link">
-                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
-                                class="bi bi-brightness-low"></i></button>
+                        <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;"  onclick="darkMode()"><i id="themeIcon"
+                                class="bi bi-brightness-high "></i></button>
                     </div>
                   </div>
                 </div>
@@ -111,33 +145,44 @@
     </div>
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/main_bg.jpeg" class="d-block w-100" alt="..." height="500px">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/bg2.jpeg" class="d-block w-100" alt="..." height="500px">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/407322.webp" class="d-block w-100" alt="..." height="500px">
-                </div>
+      
+            <div class="carouselContainer">
+                <div class="swiper">
 
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">  
+                      <div class="swiper-image">
+                        <div class="image">
+                            <img src="./assets/main_bg.jpeg" alt=".." >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <div class="swiper-image">
+                        <div class="image">
+                            <img src="./assets/bg2.jpeg" alt=".." > 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <div class="swiper-image">
+                        <div class="image"> 
+                            <img src="./assets/407322.webp" alt=".." >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
+                    <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
+                </div>
+              </div>
+
+        
 
         <p align="center">
         <h1 style="color: var(--col1);">All Anime Characters</h1>
@@ -5702,93 +5747,49 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             </div>
             <!--Sample Daisuke Kambe card end-->
             <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/spikespiegel.jpg" alt="Spike Spiegel" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Spike Spiegel</h2>
-                            <p class="card-text">
-                                Spike Spiegel is the main protagonist of the anime series Cowboy Bebop.
-                                He is a bounty hunter or "cowboy" (as he's referred to on several occasions) on a
-                                spaceship called the Bebop and travels through the space with his crew consisting of his
-                                old friend, Jet, and recent members, Faye, Ed, and Ein.
-                            </p>
-                            <p>
-                                Spike is a former member of the criminal Red Dragon Syndicate, who left by faking his
-                                death after falling in love with a woman named Julia. During his adventures on board the
-                                Bebop, he is drawn back into a bitter feud with Vicious, a rival from the Syndicate who
-                                seeks to kill him.
-                                The inspiration for Spike is found in martial artist Bruce Lee who uses the martial arts
-                                style of Jeet Kune Do as depicted in Session 8, "Waltz For Venus". He has fluffy, dark
-                                green hair (which is inspired by Yusaku Matsuda's) and reddish brown eyes, one of which
-                                is artificial and lighter than the other.
-                                He is usually dressed in a blue leisure suit, with a yellow shirt and Lupin III inspired
-                                boots.A flashback in Session 6 revealed it was his fully functioning right eye which was
-                                surgically replaced by the cybernetic one (although Spike himself may not have conscious
-                                recollection of the procedure since he claims to have lost his natural eye in an
-                                "accident").
-
-                            </p>
-                            <hr>
-                            <p>Contributed by- Pranjal Mishra </p>
+		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/tenten.webp" alt="tenten" height="390px" width="300px">
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Tenten</h2>
+                                <p class="card-text">
+                                    Tenten is one of the main supporting characters in the Naruto anime/manga series and the Boruto: Naruto Next Generations anime/manga series. She is a chūnin-level kunoichi of Konohagakure and member of Team Guy.
+She is voiced by Yukari Tamura in the Japanese version of the anime, and by Danielle Judovits in the English version of the anime.
+                                </p>
+                                <p>
+                                    Tenten has black hair and steel-grey eyes in the manga — both of which are depicted as being dark brown in the anime. She wears her hair in Chinese-style buns on either side of her head with short fringe-bangs falling over her forehead protector which she wears in the traditional manner.Tenten strongly believes that female shinobi can be as strong as male shinobi. During the Chūnin Exams, Neji suggests that kunoichi aren't good at taijutsu, but Tenten reprimands him, explaining that girls are just as good as boys when it comes to taijutsu. Tenten's personal dream is to become as powerful, legendary and well noted female ninja as Tsunade. She can be quite fierce sometimes, especially with Lee, violently shaking him whenever he is left unconscious, Naruto also describes her personality as fierce and scary. She also says different stuff from what she thinks, like when she called Lee and idiot and reckless but in reality she knew he would have won against the Sound Nin if there weren't any distractions. Tenten also has shown a strong distaste for weakness or being overly dependent on other people. Despite this, she is not above showing a softer side when it comes to her team-mates. She holds great respect for her former team-mate, Neji, and often helped him train like the time before Neji's Chūnin Exams, she got him ready for his match.
+                                </p>
+                                <hr>
+                                <p>Contributed by- Ayush</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
+                <!--Sample Tenten card end-->
+                <!--Add your card below this line -->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Dio_brando.jpg" alt="Dio Brando" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Dio Brando</h2>
-                            <p class="card-text">
-                                Dio Brando (Japanese: ディオ・ブランドー, Hepburn: Dio Burandō) is a fictional character and the
-                                main antagonist of the Japanese manga series JoJo's Bizarre Adventure written and
-                                illustrated by Hirohiko Araki. He is featured primarily as the main antagonist of the
-                                series' first part, Phantom Blood, appearing in the debut chapter "Dio the Invader"
-                                (侵略者ディオ, Shinryakusha Dio), published in Weekly Shōnen Jump in 1987
-                            </p>
-                            <p>
-                                Dio's mannerisms, such as his frequent cries of "Muda" (無駄, "useless") and "WRYYYYY"
-                                (ウリイイイイ, Uriiiii), have yielded several Internet memes and other popular culture
-                                references
-                            </p>
-                            <hr>
-                            <p>Contributed by- Jitesh117</p>
+                            <img src="./images/meghumi fushiguro.jpg" alt="meghumi fushiguro" height="390px" width="300px">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-
-            
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Hellsingalucard.png" alt="Alucard" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Alucard (Hellsing)</h2>
-                            <p class="card-text">
-                                Alucard , previously Count Dracula (Dorakyura), is a fictional character and the protagonist of the Hellsing manga and anime series created by Kouta Hirano. A vampire devoted entirely to the current head of the Hellsing family, Integra Hellsing, Alucard works with the Hellsing Organization against other vampires and evil forces, fighting with ferocity and cruelty, sometimes only killing after a target has been disabled and humiliated, while frequently allowing enemies more than one chance to kill him (though only seeking to be killed by a human, having grown bored of immortality and life). Count Dracula was defeated by Abraham Van Helsing and became the family's loyal servant. Decades later, Abraham's direct descendant Arthur Hellsing gives the Count the codename "Alucard". Hellsing is set over a hundred years later, where Alucard and the Hellsing Organization are forced to fight the remnants of a Nazi battalion. Alucard also appears in the prequel series Hellsing: The Dawn, taking a female form alongside his partner Walter C.
-                            </p>
-                            <p>
-                                Hirano created Alucard as a strong individual who would be deus ex machina on his own, resulting in an easy defeat of most enemies. Alucard is voiced by Jouji Nakata in Japanese and Crispin Freeman in English. Critical response to the character has been positive for Alucard's dark traits such as sadism or supernatural abilities that make him stand out as excessively violent despite being the main hero. Alucard's design also stood out for being called "stylish", praising his outfits and weaponry. Alucard's voice portrayals by Nakata and Freeman were also met with a positive response.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Smruti Ranjan</p>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Meghumi Fushiguro</h2>
+                                <p class="card-text">
+                                    Megumi Fushiguro is a fictional character of the manga series Jujutsu Kaisen created by Gege Akutami. He is a first-year student at Tokyo Jujutsu High, an academy to become a Jujutsu sorcerer and develop cursed techniques to fight against cursed spirits, beings manifested from cursed energy due to negative emotions flowing from humans.
+                                </p>
+                                <p>
+                                    He is a descendant to the Zenin family, one of the ultimate clans dominating the world of sorcery.[1] Early in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to locate one of Sukuna's fingers, objects belonging to the most powerful cursed spirit of all time which leads to him partnering with and befriending Yuji Itadori, a fellow first-year Jujutsu sorcerer.
+                                </p>
+                                <hr>
+                                <p>Contributed by- Anant Jain</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -5846,7 +5847,7 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <!--Add your card below this line -->
 
             
-	</div>
+
     </main>
     <footer>
 
@@ -5854,6 +5855,7 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <li class="page-item previous-page"><a class="page-link" href="#">Prev</a></li>
             <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
         </div>
+
 
 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -6326,6 +6328,18 @@ He is rather socially awkward. He is incapable of "reading the atmosphere," whic
     <!-- Do not alter the code below this line unless you want to improve the website -->
     <footer>
         <nav class="navbar navbar-expand-lg navbar-light nav1">
+
+
+
+    <!-- Do not alter the code below this line unless you want to improve the website -->
+
+    
+
+
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark nav1 " >
+
+
             <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
                     href="https://github.com/DecodersCommunity">Decoders Community</a></p>
         </nav>
@@ -6343,11 +6357,19 @@ He is rather socially awkward. He is incapable of "reading the atmosphere," whic
     <script src="/indexdarkmode.js"></script>
     <script src="scrolltotop.js"></script>
     <script src="pagination.js"></script>
+    <!-- <script src="swipper.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
         /* ------- Scroll To Top Button -------*/
 
         const toTop = document.querySelector(".to-top");
+        const toBottom = document.querySelector(".bottom");
+        if (document.documentElement.scrollTop<document.documentElement.scrollHeight-1000) {
+                toBottom.classList.add("active");
+            } else {
+                toBottom.classList.remove("active");
+            }
         window.addEventListener("scroll", () => {
 
             if (window.pageYOffset > 400) {
@@ -6355,8 +6377,22 @@ He is rather socially awkward. He is incapable of "reading the atmosphere," whic
             } else {
                 toTop.classList.remove("active");
             }
-
+            if (document.documentElement.scrollTop<document.documentElement.scrollHeight-1000) {
+                toBottom.classList.add("active");
+            } else {
+                toBottom.classList.remove("active");
+            }
+            
         });
+        
+        function scrollToBottom(){
+            console.log(document.documentElement.scrollTop, document.documentElement.scrollHeight);
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behaviour: "smooth"
+            })
+        }
+        toBottom.addEventListener("click", scrollToBottom);
     </script>
 
 
@@ -6368,21 +6404,46 @@ He is rather socially awkward. He is incapable of "reading the atmosphere," whic
                 let navBackground = document.getElementById("navBackground");
                 let toggle = document.querySelector(".navbar-toggler");
                 const btn = document.getElementById('btn');
+                let themeIcon = document.getElementById("themeIcon");
+
                 if (btn.classList.contains("btn-outline-dark")) {
                     btn.classList.remove("btn-outline-dark");
                     btn.classList.add("btn-outline-light");
                     navBackground.classList.remove("bg-light")
                     navBackground.classList.add("bg-dark")
+                    themeIcon.classList.remove("bi-brightness-high")
+                    themeIcon.classList.add("bi-moon-stars")
                     toggle.classList.add("custom-toggler")
                 }else {
                     btn.classList.add("btn-outline-dark");
                     navBackground.classList.add("bg-light")
                     navBackground.classList.remove("bg-dark")
+                    themeIcon.classList.remove("bi-moon-stars")
+                    themeIcon.classList.add("bi-brightness-high")
                     toggle.classList.remove("custom-toggler")
                 }
 
             element.classList.toggle("dark-mode");
         }
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+            },
+            centeredSlides: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }
+          });
+        
+
+
+        
+
 
         
     </script>
