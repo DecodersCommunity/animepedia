@@ -23,14 +23,16 @@
     :root {
         --col1: blue;
         --col2: black;
-        --swiper-image-ratio: 34%; /* ratio 16:9 = 56.25% */
+        --swiper-image-ratio: 34%;
+        /* ratio 16:9 = 56.25% */
 
-  --swiper-width: 50%;
-  --swiper-inactive-scale: .85; /* makes the other slide smaller */
-  
-  /* responsive settings */
-  --swiper-mobile-width: 90%;
-  --swiper-mobile-inactive-scale: 1;
+        --swiper-width: 50%;
+        --swiper-inactive-scale: .85;
+        /* makes the other slide smaller */
+
+        /* responsive settings */
+        --swiper-mobile-width: 90%;
+        --swiper-mobile-inactive-scale: 1;
 
     }
 
@@ -88,24 +90,26 @@
         <!-- Changed Navbar Content and Search box below the navbar -->
 
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between" id="navBackground">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between"
+                id="navBackground">
                 <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">AnimePedia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
-                    <div class="theme-btn nav-link">
-                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
-                                class="bi bi-brightness-low"></i></button>
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
+                        <div class="theme-btn nav-link">
+                            <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
+                                    class="bi bi-brightness-low"></i></button>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
-                
-              </nav>
-              <div class="search">
+
+            </nav>
+            <div class="search">
                 <div class="icon"></div>
                 <div class="input">
                     <input type="text" placeholder="search" id="mysearch">
@@ -121,44 +125,44 @@
     </div>
 
     <main>
-      
-            <div class="carouselContainer">
-                <div class="swiper">
 
-                  <div class="swiper-wrapper">
+        <div class="carouselContainer">
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide">  
-                      <div class="swiper-image">
-                        <div class="image">
-                            <img src="./assets/main_bg.jpeg" alt=".." >
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/main_bg.jpeg" alt="..">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                      <div class="swiper-image">
-                        <div class="image">
-                            <img src="./assets/bg2.jpeg" alt=".." > 
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/bg2.jpeg" alt="..">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                      <div class="swiper-image">
-                        <div class="image"> 
-                            <img src="./assets/407322.webp" alt=".." >
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/407322.webp" alt="..">
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  
-                  <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
-                    <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
                 </div>
-              </div>
 
-        
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
+                <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
+            </div>
+        </div>
+
+
 
         <p align="center">
         <h1 style="color: var(--col1);">All Anime Characters</h1>
@@ -191,7 +195,7 @@
                             </p>
                             <hr>
                             <p>Contributed by- Raunak Agarwal</p>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -265,7 +269,7 @@
                 </div>
             </div>
             <!--Sample [Character Name] card end-->
-		    
+
             <!--Add your card below this line -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -299,23 +303,26 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-		  
-           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/shinji_ikari.png" alt="Shinji Ikari" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Shinji Ikari</h2>
                             <p class="card-text">
-                            Heroes are often what we to be:powerful,capable,beautiful,and with some added flaws to make them relatable.But shinji was different,he
-	                    provided an uncensored look at who we are.He is hated for being a wuss-scared,whiny,creepy and hopeless.
+                                Heroes are often what we to be:powerful,capable,beautiful,and with some added flaws to
+                                make them relatable.But shinji was different,he
+                                provided an uncensored look at who we are.He is hated for being a
+                                wuss-scared,whiny,creepy and hopeless.
                             </p>
                             <p>
-		            Hideaki Anno while making the show ,and like a true artist,he poured all of that emotion and despair into his work.Shinji is a mirror 
-		             of all the things depression teaches a person to hate about themselves.		    
+                                Hideaki Anno while making the show ,and like a true artist,he poured all of that emotion
+                                and despair into his work.Shinji is a mirror
+                                of all the things depression teaches a person to hate about themselves.
                             </p>
                             <hr>
                             <p>Contributed by- Yash Lawaniya</p>
@@ -324,22 +331,31 @@
                 </div>
             </div>
             <!--Sample [Character Name] card end-->
-		    
+
             <!--Add your card below this line -->
-		                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/Kirito.png" alt="Kirito" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Kirito</h2>
                             <p class="card-text">
-                              Kazuto Kirigaya (桐ヶ谷 和人, Kirigaya Kazuto), born as Kazuto Narusaka (鳴坂 和人, Narusaka Kazuto), is a fictional character and the protagonist of the Sword Art Online series of light novels written by Reki Kawahara. He is more commonly known by his portmanteau, Kirito (キリト, Kirito), his player name in the eponymous video game which the series are partially set in.
+                                Kazuto Kirigaya (桐ヶ谷 和人, Kirigaya Kazuto), born as Kazuto Narusaka (鳴坂 和人, Narusaka
+                                Kazuto), is a fictional character and the protagonist of the Sword Art Online series of
+                                light novels written by Reki Kawahara. He is more commonly known by his portmanteau,
+                                Kirito (キリト, Kirito), his player name in the eponymous video game which the series are
+                                partially set in.
                             </p>
                             <p>
-                              In the series, Kirito is depicted as a teenager who was chosen as one of 1,000 beta testers for a new virtual reality video game: Sword Art Online. After the game is released to the general public, he and the rest of the 10,000 players soon discover that they are unable to log out and are trapped in the simulation unless they manage to beat the game. In the anime adaptation, Kirito is voiced in Japanese by Yoshitsugu Matsuoka and in English by Bryce Papenbrook.
+                                In the series, Kirito is depicted as a teenager who was chosen as one of 1,000 beta
+                                testers for a new virtual reality video game: Sword Art Online. After the game is
+                                released to the general public, he and the rest of the 10,000 players soon discover that
+                                they are unable to log out and are trapped in the simulation unless they manage to beat
+                                the game. In the anime adaptation, Kirito is voiced in Japanese by Yoshitsugu Matsuoka
+                                and in English by Bryce Papenbrook.
                             </p>
                             <hr>
                             <p>Contributed by- Narendra Mohan Pathak</p>
@@ -348,21 +364,27 @@
                 </div>
             </div>
             <!--Sample [Character Name] card end-->
-                
-		    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/shinchan.png" alt="Shin chan" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Shin chan</h2>
                             <p class="card-text">
-                              An anime adaptation of Crayon Shin-chan, produced by Shin-Ei Animation, has aired in Japan on TV Asahi since April 13, 1992. The series was originally directed by Mitsuru Hongo from 1992 to 1996, and was replaced by Keiichi Hara from 1996 to 2004. Since 2004, the series is directed by Yuji Muto.
+                                An anime adaptation of Crayon Shin-chan, produced by Shin-Ei Animation, has aired in
+                                Japan on TV Asahi since April 13, 1992. The series was originally directed by Mitsuru
+                                Hongo from 1992 to 1996, and was replaced by Keiichi Hara from 1996 to 2004. Since 2004,
+                                the series is directed by Yuji Muto.
                             </p>
                             <p>
-                             The music in the series is composed by Toshiyuki Arakawa. The series was originally going to end in 1994 and have its time-slot replaced by a remake of Umeboshi Denka. However, because the series was a huge hit on TV Asahi, the network decided not to replace it.[16]
+                                The music in the series is composed by Toshiyuki Arakawa. The series was originally
+                                going to end in 1994 and have its time-slot replaced by a remake of Umeboshi Denka.
+                                However, because the series was a huge hit on TV Asahi, the network decided not to
+                                replace it.[16]
                             </p>
                             <hr>
                             <p>Contributed by-Pranav Prakash Saxena</p>
@@ -411,16 +433,25 @@
                         <div class="card-body">
                             <h2 class="card-title">Ochaco Uraraka </h2>
                             <p class="card-text">
-                                Lelouch was one of the best examples of a hero gone astray. As often happens in dramatic stories,
-                                his good intentions paved a road to a dark place. The words "the ends justify the means" were his mantra,
-                                but his desire to right wrongs and create a better world for his sister led him to become the exact kind 
-                                of despot that he was trying to fight against. His rise and downfall is almost Shakespearean in nature, 
-                                as his own pride and arrogance cloud his judgment and he misses out on what was truly important.
+                                Lelouch was one of the best examples of a hero gone astray. As often happens in dramatic
+                                stories,
+                                his good intentions paved a road to a dark place. The words "the ends justify the means"
+                                were his mantra,
+                                but his desire to right wrongs and create a better world for his sister led him to
+                                become the exact kind
+                                of despot that he was trying to fight against. His rise and downfall is almost
+                                Shakespearean in nature,
+                                as his own pride and arrogance cloud his judgment and he misses out on what was truly
+                                important.
                             </p>
                             <p>
-                                But at least he did it all with a sense of dramatic flair! His alter ego Zero, complete with mysterious helmet
-                                and flowing cape, was an iconic tool to secure a place in the psyche of both his enemies and his followers. 
-                                But it wasn't just a costume; slowly Zero becomes a persona for Lelouch until eventually the hopeful boy he was starts to fade away. In the end, Lelouch's plans are successful, though not in the way anyone ever expected.
+                                But at least he did it all with a sense of dramatic flair! His alter ego Zero, complete
+                                with mysterious helmet
+                                and flowing cape, was an iconic tool to secure a place in the psyche of both his enemies
+                                and his followers.
+                                But it wasn't just a costume; slowly Zero becomes a persona for Lelouch until eventually
+                                the hopeful boy he was starts to fade away. In the end, Lelouch's plans are successful,
+                                though not in the way anyone ever expected.
                             </p>
                             <hr>
                             <p>Contributed by-Ishita Gupta</p>
@@ -3347,20 +3378,28 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-                            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/TimMarcoh.png" alt="Tim Marcoh" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Tim Marcoh</h2>
                             <p class="card-text">
-                              Dr. Marcoh is one of the oldest known alchemists of the series and as such has incredible knowledge regarding alchemy. His most notable knowledge is related to the creation of the Philosopher's Stone, knowledge given to him by the homunculi. After numerous experiments with their creation, he is also able to destroy them, an ability which proves effective when fighting Envy.
+                                Dr. Marcoh is one of the oldest known alchemists of the series and as such has
+                                incredible knowledge regarding alchemy. His most notable knowledge is related to the
+                                creation of the Philosopher's Stone, knowledge given to him by the homunculi. After
+                                numerous experiments with their creation, he is also able to destroy them, an ability
+                                which proves effective when fighting Envy.
                             </p>
                             <p>
-                              Dr. Marcoh is one of the oldest known alchemists of the series and as such has incredible knowledge regarding alchemy. His most notable knowledge is related to the creation of the Philosopher's Stone, knowledge given to him by the homunculi. After numerous experiments with their creation, he is also able to destroy them, an ability which proves effective when fighting Envy.
+                                Dr. Marcoh is one of the oldest known alchemists of the series and as such has
+                                incredible knowledge regarding alchemy. His most notable knowledge is related to the
+                                creation of the Philosopher's Stone, knowledge given to him by the homunculi. After
+                                numerous experiments with their creation, he is also able to destroy them, an ability
+                                which proves effective when fighting Envy.
                             </p>
                             <hr>
                             <p>Contributed by- Divyanshi Gupta</p>
@@ -5642,54 +5681,79 @@
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
 
-		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                            <img src="./images/tenten.webp" alt="tenten" height="390px" width="300px">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title">Tenten</h2>
-                                <p class="card-text">
-                                    Tenten is one of the main supporting characters in the Naruto anime/manga series and the Boruto: Naruto Next Generations anime/manga series. She is a chūnin-level kunoichi of Konohagakure and member of Team Guy.
-She is voiced by Yukari Tamura in the Japanese version of the anime, and by Danielle Judovits in the English version of the anime.
-                                </p>
-                                <p>
-                                    Tenten has black hair and steel-grey eyes in the manga — both of which are depicted as being dark brown in the anime. She wears her hair in Chinese-style buns on either side of her head with short fringe-bangs falling over her forehead protector which she wears in the traditional manner.Tenten strongly believes that female shinobi can be as strong as male shinobi. During the Chūnin Exams, Neji suggests that kunoichi aren't good at taijutsu, but Tenten reprimands him, explaining that girls are just as good as boys when it comes to taijutsu. Tenten's personal dream is to become as powerful, legendary and well noted female ninja as Tsunade. She can be quite fierce sometimes, especially with Lee, violently shaking him whenever he is left unconscious, Naruto also describes her personality as fierce and scary. She also says different stuff from what she thinks, like when she called Lee and idiot and reckless but in reality she knew he would have won against the Sound Nin if there weren't any distractions. Tenten also has shown a strong distaste for weakness or being overly dependent on other people. Despite this, she is not above showing a softer side when it comes to her team-mates. She holds great respect for her former team-mate, Neji, and often helped him train like the time before Neji's Chūnin Exams, she got him ready for his match.
-                                </p>
-                                <hr>
-                                <p>Contributed by- Ayush</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Sample Tenten card end-->
-                <!--Add your card below this line -->
-                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                            <img src="./images/meghumi fushiguro.jpg" alt="meghumi fushiguro" height="390px" width="300px">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title">Meghumi Fushiguro</h2>
-                                <p class="card-text">
-                                    Megumi Fushiguro is a fictional character of the manga series Jujutsu Kaisen created by Gege Akutami. He is a first-year student at Tokyo Jujutsu High, an academy to become a Jujutsu sorcerer and develop cursed techniques to fight against cursed spirits, beings manifested from cursed energy due to negative emotions flowing from humans.
-                                </p>
-                                <p>
-                                    He is a descendant to the Zenin family, one of the ultimate clans dominating the world of sorcery.[1] Early in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to locate one of Sukuna's fingers, objects belonging to the most powerful cursed spirit of all time which leads to him partnering with and befriending Yuji Itadori, a fellow first-year Jujutsu sorcerer.
-                                </p>
-                                <hr>
-                                <p>Contributed by- Anant Jain</p>
-                            </div>
+                        <img src="./images/tenten.webp" alt="tenten" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Tenten</h2>
+                            <p class="card-text">
+                                Tenten is one of the main supporting characters in the Naruto anime/manga series and the
+                                Boruto: Naruto Next Generations anime/manga series. She is a chūnin-level kunoichi of
+                                Konohagakure and member of Team Guy.
+                                She is voiced by Yukari Tamura in the Japanese version of the anime, and by Danielle
+                                Judovits in the English version of the anime.
+                            </p>
+                            <p>
+                                Tenten has black hair and steel-grey eyes in the manga — both of which are depicted as
+                                being dark brown in the anime. She wears her hair in Chinese-style buns on either side
+                                of her head with short fringe-bangs falling over her forehead protector which she wears
+                                in the traditional manner.Tenten strongly believes that female shinobi can be as strong
+                                as male shinobi. During the Chūnin Exams, Neji suggests that kunoichi aren't good at
+                                taijutsu, but Tenten reprimands him, explaining that girls are just as good as boys when
+                                it comes to taijutsu. Tenten's personal dream is to become as powerful, legendary and
+                                well noted female ninja as Tsunade. She can be quite fierce sometimes, especially with
+                                Lee, violently shaking him whenever he is left unconscious, Naruto also describes her
+                                personality as fierce and scary. She also says different stuff from what she thinks,
+                                like when she called Lee and idiot and reckless but in reality she knew he would have
+                                won against the Sound Nin if there weren't any distractions. Tenten also has shown a
+                                strong distaste for weakness or being overly dependent on other people. Despite this,
+                                she is not above showing a softer side when it comes to her team-mates. She holds great
+                                respect for her former team-mate, Neji, and often helped him train like the time before
+                                Neji's Chūnin Exams, she got him ready for his match.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Ayush</p>
                         </div>
                     </div>
                 </div>
-                <!--Sample [Character Name] card end-->
-                <!--Add your card below this line -->
-		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            </div>
+            <!--Sample Tenten card end-->
+            <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/meghumi fushiguro.jpg" alt="meghumi fushiguro" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Meghumi Fushiguro</h2>
+                            <p class="card-text">
+                                Megumi Fushiguro is a fictional character of the manga series Jujutsu Kaisen created by
+                                Gege Akutami. He is a first-year student at Tokyo Jujutsu High, an academy to become a
+                                Jujutsu sorcerer and develop cursed techniques to fight against cursed spirits, beings
+                                manifested from cursed energy due to negative emotions flowing from humans.
+                            </p>
+                            <p>
+                                He is a descendant to the Zenin family, one of the ultimate clans dominating the world
+                                of sorcery.[1] Early in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to
+                                locate one of Sukuna's fingers, objects belonging to the most powerful cursed spirit of
+                                all time which leads to him partnering with and befriending Yuji Itadori, a fellow
+                                first-year Jujutsu sorcerer.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Anant Jain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
@@ -5792,7 +5856,7 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
 
-            
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -5803,10 +5867,28 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
                         <div class="card-body">
                             <h2 class="card-title">Alucard (Hellsing)</h2>
                             <p class="card-text">
-                                Alucard , previously Count Dracula (Dorakyura), is a fictional character and the protagonist of the Hellsing manga and anime series created by Kouta Hirano. A vampire devoted entirely to the current head of the Hellsing family, Integra Hellsing, Alucard works with the Hellsing Organization against other vampires and evil forces, fighting with ferocity and cruelty, sometimes only killing after a target has been disabled and humiliated, while frequently allowing enemies more than one chance to kill him (though only seeking to be killed by a human, having grown bored of immortality and life). Count Dracula was defeated by Abraham Van Helsing and became the family's loyal servant. Decades later, Abraham's direct descendant Arthur Hellsing gives the Count the codename "Alucard". Hellsing is set over a hundred years later, where Alucard and the Hellsing Organization are forced to fight the remnants of a Nazi battalion. Alucard also appears in the prequel series Hellsing: The Dawn, taking a female form alongside his partner Walter C.
+                                Alucard , previously Count Dracula (Dorakyura), is a fictional character and the
+                                protagonist of the Hellsing manga and anime series created by Kouta Hirano. A vampire
+                                devoted entirely to the current head of the Hellsing family, Integra Hellsing, Alucard
+                                works with the Hellsing Organization against other vampires and evil forces, fighting
+                                with ferocity and cruelty, sometimes only killing after a target has been disabled and
+                                humiliated, while frequently allowing enemies more than one chance to kill him (though
+                                only seeking to be killed by a human, having grown bored of immortality and life). Count
+                                Dracula was defeated by Abraham Van Helsing and became the family's loyal servant.
+                                Decades later, Abraham's direct descendant Arthur Hellsing gives the Count the codename
+                                "Alucard". Hellsing is set over a hundred years later, where Alucard and the Hellsing
+                                Organization are forced to fight the remnants of a Nazi battalion. Alucard also appears
+                                in the prequel series Hellsing: The Dawn, taking a female form alongside his partner
+                                Walter C.
                             </p>
                             <p>
-                                Hirano created Alucard as a strong individual who would be deus ex machina on his own, resulting in an easy defeat of most enemies. Alucard is voiced by Jouji Nakata in Japanese and Crispin Freeman in English. Critical response to the character has been positive for Alucard's dark traits such as sadism or supernatural abilities that make him stand out as excessively violent despite being the main hero. Alucard's design also stood out for being called "stylish", praising his outfits and weaponry. Alucard's voice portrayals by Nakata and Freeman were also met with a positive response.
+                                Hirano created Alucard as a strong individual who would be deus ex machina on his own,
+                                resulting in an easy defeat of most enemies. Alucard is voiced by Jouji Nakata in
+                                Japanese and Crispin Freeman in English. Critical response to the character has been
+                                positive for Alucard's dark traits such as sadism or supernatural abilities that make
+                                him stand out as excessively violent despite being the main hero. Alucard's design also
+                                stood out for being called "stylish", praising his outfits and weaponry. Alucard's voice
+                                portrayals by Nakata and Freeman were also met with a positive response.
                             </p>
                             <hr>
                             <p>Contributed by- Smruti Ranjan</p>
@@ -5819,20 +5901,30 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/roymustang.jpeg" alt="Roy Mustang" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Roy Mustang</h2>
                             <p class="card-text">
-                              Roy Mustang (ロイ・マスタング Roi Masutangu?), also known as the Flame Alchemist (焔の錬金術師 Honō no Renkinjutsushi?), is the tritagonist of the Fullmetal Alchemist series.
-				    He is a State Alchemist and officer in the Amestrian State Military. A hero of the Ishval Civil War and Edward Elric’s superior officer, Colonel Mustang is a remarkably capable commander who plans to become the next Führer of Amestris.
+                                Roy Mustang (ロイ・マスタング Roi Masutangu?), also known as the Flame Alchemist (焔の錬金術師 Honō no
+                                Renkinjutsushi?), is the tritagonist of the Fullmetal Alchemist series.
+                                He is a State Alchemist and officer in the Amestrian State Military. A hero of the
+                                Ishval Civil War and Edward Elric’s superior officer, Colonel Mustang is a remarkably
+                                capable commander who plans to become the next Führer of Amestris.
                             </p>
                             <p>
-                              Despite his ambition, as the series continues, Mustang decides to overthrow the State Military after his best friend, Maes Hughes, is killed by the homunculi, who are controlling the Military.
-				    Besides his appearances in the manga and the anime, Mustang has also been featured in other media for the series, such as Makoto Inoue's light novels, the original video animations and the Fullmetal Alchemist video games. 
-				    Since his introduction in the manga series, Mustang has been well received by readers, appearing second in each popularity poll for the series. His character has also received praise in various outside media, with many of them focusing on his character and development in both manga and anime.
+                                Despite his ambition, as the series continues, Mustang decides to overthrow the State
+                                Military after his best friend, Maes Hughes, is killed by the homunculi, who are
+                                controlling the Military.
+                                Besides his appearances in the manga and the anime, Mustang has also been featured in
+                                other media for the series, such as Makoto Inoue's light novels, the original video
+                                animations and the Fullmetal Alchemist video games.
+                                Since his introduction in the manga series, Mustang has been well received by readers,
+                                appearing second in each popularity poll for the series. His character has also received
+                                praise in various outside media, with many of them focusing on his character and
+                                development in both manga and anime.
                             </p>
                             <hr>
                             <p>Contributed by- Pranjal Mishra</p>
@@ -5842,20 +5934,47 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-	    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
                         <img src="./images/David Martinez.jpg" alt="David Martinez" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">David Martinez</h2>
                             <p class="card-text">
-                              David Martinez is a Latino teenager with light brown eyes and brown hair that he wears in a quaffed hairstyle, with the sides shaved. He has a thin athletic build typical of a teenager his age. David's typical style is Kitsch, sporting a black t-shirt, two golden chain necklaces (one with a cross), gray cropped sweatpants with two yellow straps on either side, and white tennis shoes with blue straps. Later on, he starts to wear his mother's yellow EMT jacket with a blue luminescent collar on the inside of the material, with a green logo painted on the back. 
+                                David Martinez is a Latino teenager with light brown eyes and brown hair that he wears
+                                in a quaffed hairstyle, with the sides shaved. He has a thin athletic build typical of a
+                                teenager his age. David's typical style is Kitsch, sporting a black t-shirt, two golden
+                                chain necklaces (one with a cross), gray cropped sweatpants with two yellow straps on
+                                either side, and white tennis shoes with blue straps. Later on, he starts to wear his
+                                mother's yellow EMT jacket with a blue luminescent collar on the inside of the material,
+                                with a green logo painted on the back.
                             </p>
                             <p>
-                              After being chipped in, David—while still expelled—returned the following day to the academy, in search of a rematch with Katsuo. Utilizing his Sandevistan implant, David easily floored Katsuo with a single blow to the head and broke his nose. Once returned home, David stared at the urn holding his mother's ashes, when he received a call from the academy's principal. The principal told David that his expulsion had been formally processed, but before the principal could end his sentence, David ended the conversation. The next morning, making his way to the academy, he noticed that the mysterious girl was aboard the NCART train, stealing shards from unsuspecting corporate employees on their way to City Center. The woman attempted to also take David's shards, but was quickly intercepted by David utilizing his implant. He grasped her arm, which she shrugged off and instead took him with her to the end of the cart, and interrogated David on why he was messing with her “job”. After a short discussion, the two came to an agreement to work together, Lucy taking on David as her trainee, and split their earnings seventy-to-thirty. After a short confrontation with an ambulance worker who wanted to steal David's Sandevistan to sell on the black market, David stays the night at Lucy's apartment, where she tells him her dream of leaving Night City to live on the moon, and shares a braindance with him. The two bond during this experience, but while David is asleep Lucy calls her team of mercs to her apartment. Maine, Dorio, and Pilar arrive and confront David about the stolen Sandevistan, which Gloria had originally planned to sell to Maine. After David reveals that Gloria had died, and demonstrates an extreme tolerance for cyberware, he's given a chance to join their group, on the condition that he proves himself in a small-scale data heist. 
+                                After being chipped in, David—while still expelled—returned the following day to the
+                                academy, in search of a rematch with Katsuo. Utilizing his Sandevistan implant, David
+                                easily floored Katsuo with a single blow to the head and broke his nose. Once returned
+                                home, David stared at the urn holding his mother's ashes, when he received a call from
+                                the academy's principal. The principal told David that his expulsion had been formally
+                                processed, but before the principal could end his sentence, David ended the
+                                conversation. The next morning, making his way to the academy, he noticed that the
+                                mysterious girl was aboard the NCART train, stealing shards from unsuspecting corporate
+                                employees on their way to City Center. The woman attempted to also take David's shards,
+                                but was quickly intercepted by David utilizing his implant. He grasped her arm, which
+                                she shrugged off and instead took him with her to the end of the cart, and interrogated
+                                David on why he was messing with her “job”. After a short discussion, the two came to an
+                                agreement to work together, Lucy taking on David as her trainee, and split their
+                                earnings seventy-to-thirty. After a short confrontation with an ambulance worker who
+                                wanted to steal David's Sandevistan to sell on the black market, David stays the night
+                                at Lucy's apartment, where she tells him her dream of leaving Night City to live on the
+                                moon, and shares a braindance with him. The two bond during this experience, but while
+                                David is asleep Lucy calls her team of mercs to her apartment. Maine, Dorio, and Pilar
+                                arrive and confront David about the stolen Sandevistan, which Gloria had originally
+                                planned to sell to Maine. After David reveals that Gloria had died, and demonstrates an
+                                extreme tolerance for cyberware, he's given a chance to join their group, on the
+                                condition that he proves himself in a small-scale data heist.
                             </p>
                             <hr>
                             <p>Contributed by- Anirban Roy</p>
@@ -5866,8 +5985,47 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
 
-            
-	</div>
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Loid_Forger.webp" alt="Loid Forger" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Loid Forger</h2>
+                            <p class="card-text">
+                                Loid Forger is the main protagonist of the <a
+                                    href="https://spy-x-family.fandom.com/wiki/SPY_x_FAMILY_(manga)" SPY x FAMILY></a>
+                                series.
+                                He has discarded everything about his past to work for his country as an undercover spy
+                                who acts under the codename
+                                "Twilight".
+                            </p>
+                            <p>
+                                Loid is a handsome man with short blond hair, blue eyes, and light skin. His hair is
+                                often slicked back to varying degrees, depending on the occasion. He is quite tall, has
+                                an athletic build and big ears. His exact age is unknown, although his history and
+                                appearance points to him being in his late twenties or early thirties.
+
+                                He is often seen wearing a light green three-piece suit with a red tie when outside. He
+                                wears a lapel pin on his left lapel, in the shape of a dagger with the symbol of WISE.
+
+                                When at home, he wears a plain t-shirt with long black pants.
+
+                                As a psychiatrist, he wears a lab coat over his shirt and tie.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Akshay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample Loid Forger card end-->
+            <!--Add your card below this line -->
+
+
+        </div>
     </main>
     <footer>
 
@@ -5913,26 +6071,26 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
     </script>
 
 
-        <script>
-            function darkMode() {
-                var element = document.body;
+    <script>
+        function darkMode() {
+            var element = document.body;
 
-                //Added bootstrap navbar class for dark and light mode
-                let navBackground = document.getElementById("navBackground");
-                let toggle = document.querySelector(".navbar-toggler");
-                const btn = document.getElementById('btn');
-                if (btn.classList.contains("btn-outline-dark")) {
-                    btn.classList.remove("btn-outline-dark");
-                    btn.classList.add("btn-outline-light");
-                    navBackground.classList.remove("bg-light")
-                    navBackground.classList.add("bg-dark")
-                    toggle.classList.add("custom-toggler")
-                }else {
-                    btn.classList.add("btn-outline-dark");
-                    navBackground.classList.add("bg-light")
-                    navBackground.classList.remove("bg-dark")
-                    toggle.classList.remove("custom-toggler")
-                }
+            //Added bootstrap navbar class for dark and light mode
+            let navBackground = document.getElementById("navBackground");
+            let toggle = document.querySelector(".navbar-toggler");
+            const btn = document.getElementById('btn');
+            if (btn.classList.contains("btn-outline-dark")) {
+                btn.classList.remove("btn-outline-dark");
+                btn.classList.add("btn-outline-light");
+                navBackground.classList.remove("bg-light")
+                navBackground.classList.add("bg-dark")
+                toggle.classList.add("custom-toggler")
+            } else {
+                btn.classList.add("btn-outline-dark");
+                navBackground.classList.add("bg-light")
+                navBackground.classList.remove("bg-dark")
+                toggle.classList.remove("custom-toggler")
+            }
 
             element.classList.toggle("dark-mode");
         }
@@ -5941,22 +6099,22 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             loop: true,
             slidesPerView: 'auto',
             autoplay: {
-              delay: 5000,
-              disableOnInteraction: false
+                delay: 5000,
+                disableOnInteraction: false
             },
             centeredSlides: true,
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
-          });
-        
+        });
 
 
-        
 
 
-        
+
+
+
     </script>
 
 </body>
