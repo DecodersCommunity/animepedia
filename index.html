@@ -73,7 +73,7 @@
     .dark-mode {
         background-color: black;
         color: white;
-        --col1: white;
+        --col1: #ffe15a;
         --col2: white;
     }
 </style>
@@ -87,8 +87,8 @@
 
         <!-- Changed Navbar Content and Search box below the navbar -->
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-between" id="navBackground">
+        <header >
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" id="navBackground" style="background-color:#d7dee79c !important">
                 <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">AnimePedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -97,8 +97,8 @@
                   <div class="navbar-nav">
                     <a class="nav-link" href="./index.html" style="color: var(--col1);">Home</a>
                     <div class="theme-btn nav-link">
-                        <button id="btn" class="btn btn-outline-dark btn-md" onclick="darkMode()"><i
-                                class="bi bi-brightness-low"></i></button>
+                        <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;"  onclick="darkMode()"><i id="themeIcon"
+                                class="bi bi-brightness-high "></i></button>
                     </div>
                   </div>
                 </div>
@@ -5898,7 +5898,17 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
             <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light nav1">
+
+
+
+    <!-- Do not alter the code below this line unless you want to improve the website -->
+
+    
+
+
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark nav1 " >
+
             <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
                     href="https://github.com/DecodersCommunity">Decoders Community</a></p>
         </nav>
@@ -5943,16 +5953,22 @@ She is voiced by Yukari Tamura in the Japanese version of the anime, and by Dani
                 let navBackground = document.getElementById("navBackground");
                 let toggle = document.querySelector(".navbar-toggler");
                 const btn = document.getElementById('btn');
+                let themeIcon = document.getElementById("themeIcon");
+
                 if (btn.classList.contains("btn-outline-dark")) {
                     btn.classList.remove("btn-outline-dark");
                     btn.classList.add("btn-outline-light");
                     navBackground.classList.remove("bg-light")
                     navBackground.classList.add("bg-dark")
+                    themeIcon.classList.remove("bi-brightness-high")
+                    themeIcon.classList.add("bi-moon-stars")
                     toggle.classList.add("custom-toggler")
                 }else {
                     btn.classList.add("btn-outline-dark");
                     navBackground.classList.add("bg-light")
                     navBackground.classList.remove("bg-dark")
+                    themeIcon.classList.remove("bi-moon-stars")
+                    themeIcon.classList.add("bi-brightness-high")
                     toggle.classList.remove("custom-toggler")
                 }
 
