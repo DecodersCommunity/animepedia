@@ -527,56 +527,7 @@ body::-webkit-scrollbar-thumb {
     border-color: rgb(255, 255, 255);
   } 
   
-  /* Mobile devices */
-  @media (min-width: 320px) and (max-width: 480px) {
-    #carouselExampleIndicators {
-      margin-top: 80px;
-    }
-    .topic {
-      color: white;
-      text-shadow: 2px 4px 4px black;
-      font-weight: 500;
-      font-size: 40px;
-      margin-top: 30px !important;
-    }
-    h2.card-title {
-      text-align: center;
-    }
-    .navbar-nav button {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .nav-link{
-      margin-left: 45%;
-    }
-    .search {
-      left: 1rem;
-    }
-    .about-title b {
-      line-height: 2.5rem;
-    }
 
-    .heading{
-      font-size: 2.5rem;
-      margin-left: 0;
-    }
-    #navbarNavAltMarkup{
-      padding-right: 0;
-    }
-  }
-  
-
-  /* Adjusted the font size of All Anime Characters for small screen size */
-  @media(max-width:400px){
-    .text_heading{
-      font-size: 2rem;
-    }
-  }
-  
-  ul.navbar-nav.mr-auto {
-    position: absolute;
-    right: 10rem;
-  }
   
   
   button#scrolltopBtn {
@@ -605,3 +556,180 @@ body::-webkit-scrollbar-thumb {
   .pagination{
     justify-content: center;
   }
+
+
+
+
+  /* Siwpper Classes */
+  .carouselContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+  
+  .swiper {
+      position: relative;
+      width: 100%;
+      height: calc(var(--swiper-width) * var(--swiper-image-ratio) / 100%);
+      overflow: hidden;
+  }
+
+  .swiper-slide {
+    position: relative;
+    width: var(--swiper-width);
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    transform: scale(.84);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.4285rem;
+  }
+
+  
+  .swiper-backface-hidden .swiper-slide {
+    transform: scale(.84) translateZ(0);
+  }
+          
+  .swiper-slide.swiper-slide-active {  
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }
+  
+  .swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0) !important;
+  }
+  
+  .swiper-image {
+    
+    position: relative;
+    width: 62%;
+    padding-top: var(--swiper-image-ratio);
+  }
+      
+  .swiper-image .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 50%;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .swiper-button-next {
+    transform: translate(50%, -50%);
+    right: calc((100% - var(--swiper-width)) / 2);
+  }
+  
+  .swiper-button-prev {
+    transform: translate(-50%, -50%);
+    left: calc((100% - var(--swiper-width)) / 2);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .swiper {
+      height: calc(var(--swiper-mobile-width) * var(--swiper-image-ratio) / 100%);
+    }
+  
+    .swiper-slide {
+      width: var(--swiper-mobile-width);
+      transform: scale(var(--swiper-mobile-inactive-scale));
+    }
+    
+    .swiper-backface-hidden .swiper-slide.swiper-slide {
+      transform: scale(var(--swiper-mobile-inactive-scale)) translateZ(0);
+    }
+  
+    .swiper-button-next {
+      right: calc((100% - var(--swiper-mobile-width)) / 2);
+    }
+  
+    .swiper-button-prev {
+      left: calc((100% - var(--swiper-mobile-width)) / 2);
+    }
+  }
+
+    /* Mobile devices */
+    @media (min-width: 320px) and (max-width: 480px) {
+      #carouselExampleIndicators {
+        margin-top: 80px;
+      }
+      .topic {
+        color: white;
+        text-shadow: 2px 4px 4px black;
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: 30px !important;
+      }
+      h2.card-title {
+        text-align: center;
+      }
+      .navbar-nav button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .nav-link{
+        margin-left: 45%;
+      }
+      .search {
+        left: 1rem;
+      }
+      .about-title b {
+        line-height: 2.5rem;
+      }
+  
+      .heading{
+        font-size: 2.5rem;
+        margin-left: 0;
+      }
+      #navbarNavAltMarkup{
+        padding-right: 0;
+      }
+
+      /* Swiper Classes */
+      .swiper-image {
+    
+        width: 100%;
+      }
+      .swiper-slide {
+        height: 250px !important;
+      }
+    }
+    
+  
+    /* Adjusted the font size of All Anime Characters for small screen size */
+    @media(max-width:400px){
+      .text_heading{
+        font-size: 2rem;
+      }
+    }
+    
+    ul.navbar-nav.mr-auto {
+      position: absolute;
+      right: 10rem;
+    }
+
