@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>AnimePedia</title>
 </head>
 
@@ -22,6 +23,15 @@
     :root {
         --col1: blue;
         --col2: black;
+        --swiper-image-ratio: 34%; /* ratio 16:9 = 56.25% */
+
+  --swiper-width: 50%;
+  --swiper-inactive-scale: .85; /* makes the other slide smaller */
+  
+  /* responsive settings */
+  --swiper-mobile-width: 90%;
+  --swiper-mobile-inactive-scale: 1;
+
     }
 
     h2.card-title {
@@ -111,33 +121,44 @@
     </div>
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/main_bg.jpeg" class="d-block w-100" alt="..." height="500px">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/bg2.jpeg" class="d-block w-100" alt="..." height="500px">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/407322.webp" class="d-block w-100" alt="..." height="500px">
-                </div>
+      
+            <div class="carouselContainer">
+                <div class="swiper">
 
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">  
+                      <div class="swiper-image">
+                        <div class="image">
+                            <img src="./assets/main_bg.jpeg" alt=".." >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <div class="swiper-image">
+                        <div class="image">
+                            <img src="./assets/bg2.jpeg" alt=".." > 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <div class="swiper-image">
+                        <div class="image"> 
+                            <img src="./assets/407322.webp" alt=".." >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
+                    <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
+                </div>
+              </div>
+
+        
 
         <p align="center">
         <h1 style="color: var(--col1);">All Anime Characters</h1>
@@ -244,6 +265,7 @@
                 </div>
             </div>
             <!--Sample [Character Name] card end-->
+		    
             <!--Add your card below this line -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -271,6 +293,79 @@
                             </p>
                             <hr>
                             <p>Contributed by- Narendra Mohan Pathak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+		  
+           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/shinji_ikari.png" alt="Shinji Ikari" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Shinji Ikari</h2>
+                            <p class="card-text">
+                            Heroes are often what we to be:powerful,capable,beautiful,and with some added flaws to make them relatable.But shinji was different,he
+	                    provided an uncensored look at who we are.He is hated for being a wuss-scared,whiny,creepy and hopeless.
+                            </p>
+                            <p>
+		            Hideaki Anno while making the show ,and like a true artist,he poured all of that emotion and despair into his work.Shinji is a mirror 
+		             of all the things depression teaches a person to hate about themselves.		    
+                            </p>
+                            <hr>
+                            <p>Contributed by- Yash Lawaniya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+		    
+            <!--Add your card below this line -->
+		                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Kirito.png" alt="Kirito" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Kirito</h2>
+                            <p class="card-text">
+                              Kazuto Kirigaya (桐ヶ谷 和人, Kirigaya Kazuto), born as Kazuto Narusaka (鳴坂 和人, Narusaka Kazuto), is a fictional character and the protagonist of the Sword Art Online series of light novels written by Reki Kawahara. He is more commonly known by his portmanteau, Kirito (キリト, Kirito), his player name in the eponymous video game which the series are partially set in.
+                            </p>
+                            <p>
+                              In the series, Kirito is depicted as a teenager who was chosen as one of 1,000 beta testers for a new virtual reality video game: Sword Art Online. After the game is released to the general public, he and the rest of the 10,000 players soon discover that they are unable to log out and are trapped in the simulation unless they manage to beat the game. In the anime adaptation, Kirito is voiced in Japanese by Yoshitsugu Matsuoka and in English by Bryce Papenbrook.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Narendra Mohan Pathak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+                
+		    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/shinchan.png" alt="Shin chan" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Shin chan</h2>
+                            <p class="card-text">
+                              An anime adaptation of Crayon Shin-chan, produced by Shin-Ei Animation, has aired in Japan on TV Asahi since April 13, 1992. The series was originally directed by Mitsuru Hongo from 1992 to 1996, and was replaced by Keiichi Hara from 1996 to 2004. Since 2004, the series is directed by Yuji Muto.
+                            </p>
+                            <p>
+                             The music in the series is composed by Toshiyuki Arakawa. The series was originally going to end in 1994 and have its time-slot replaced by a remake of Umeboshi Denka. However, because the series was a huge hit on TV Asahi, the network decided not to replace it.[16]
+                            </p>
+                            <hr>
+                            <p>Contributed by-Pranav Prakash Saxena</p>
                         </div>
                     </div>
                 </div>
@@ -335,44 +430,6 @@
             </div>
             <!--Sample Lelouch card end-->
             <!--Add your card below this line -->
-            
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/ochako.jpg" alt="Ochaco Uraraka" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Ochaco Uraraka </h2>
-                            <p class="card-text">
-                                Ochaco Uraraka is one of the main protagonists in the manga/anime franchise, My Hero
-                                Academia. She is a student at U.A. High School training to become a Pro Hero. She is one
-                                of Izuku Midoriya's closest friends. She is voiced by Ayane Sakura in the Japanese
-                                version of the anime, and by Luci Christian in the English version.
-                            </p>
-                            <p>
-                                As a hero, her heroine identity is Uravity (ウラビティ Urabiti) and her quirk is Zero
-                                Gravity, a power to manipulate gravity in ways such as making objects weightless or
-                                making objects float, or even make herself to fly. However, her quirk still has a
-                                limitation.
-                                A drawback to this Quirk that if it is used too much (around three tons) or if she makes
-                                herself float, she will suffer from nausea and possibly vomit as a result. Her hero
-                                costume is made to minimize this negative effect
-                                when she uses her quirk. For training, Ochaco placed herself into a plastic sphere and
-                                tumbled down a mountain, in order to adjust her inner ear canals to Zero Gravity as well
-                                as to reduce the after effects of nausea, all
-                                while increasing how much weight she can lift.
-                            </p>
-                            <hr>
-                            <p>Contributed by-Harsh</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample Ochaco Uraraka card end-->
-            <!--Add your card below this line -->
-
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -5584,52 +5641,55 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/tenten.webp" alt="tenten" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Tenten</h2>
-                            <p class="card-text">
-                                Tenten is one of the main supporting characters in the Naruto anime/manga series and the
-                                Boruto: Naruto Next Generations anime/manga series. She is a chūnin-level kunoichi of
-                                Konohagakure and member of Team Guy.
-                                She is voiced by Yukari Tamura in the Japanese version of the anime, and by Danielle
-                                Judovits in the English version of the anime.
-                            </p>
-                            <p>
-                                Tenten has black hair and steel-grey eyes in the manga — both of which are depicted as
-                                being dark brown in the anime. She wears her hair in Chinese-style buns on either side
-                                of her head with short fringe-bangs falling over her forehead protector which she wears
-                                in the traditional manner.Tenten strongly believes that female shinobi can be as strong
-                                as male shinobi. During the Chūnin Exams, Neji suggests that kunoichi aren't good at
-                                taijutsu, but Tenten reprimands him, explaining that girls are just as good as boys when
-                                it comes to taijutsu. Tenten's personal dream is to become as powerful, legendary and
-                                well noted female ninja as Tsunade. She can be quite fierce sometimes, especially with
-                                Lee, violently shaking him whenever he is left unconscious, Naruto also describes her
-                                personality as fierce and scary. She also says different stuff from what she thinks,
-                                like when she called Lee and idiot and reckless but in reality she knew he would have
-                                won against the Sound Nin if there weren't any distractions. Tenten also has shown a
-                                strong distaste for weakness or being overly dependent on other people. Despite this,
-                                she is not above showing a softer side when it comes to her team-mates. She holds great
-                                respect for her former team-mate, Neji, and often helped him train like the time before
-                                Neji's Chūnin Exams, she got him ready for his match.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Ayush</p>
+
+		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/tenten.webp" alt="tenten" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Tenten</h2>
+                                <p class="card-text">
+                                    Tenten is one of the main supporting characters in the Naruto anime/manga series and the Boruto: Naruto Next Generations anime/manga series. She is a chūnin-level kunoichi of Konohagakure and member of Team Guy.
+She is voiced by Yukari Tamura in the Japanese version of the anime, and by Danielle Judovits in the English version of the anime.
+                                </p>
+                                <p>
+                                    Tenten has black hair and steel-grey eyes in the manga — both of which are depicted as being dark brown in the anime. She wears her hair in Chinese-style buns on either side of her head with short fringe-bangs falling over her forehead protector which she wears in the traditional manner.Tenten strongly believes that female shinobi can be as strong as male shinobi. During the Chūnin Exams, Neji suggests that kunoichi aren't good at taijutsu, but Tenten reprimands him, explaining that girls are just as good as boys when it comes to taijutsu. Tenten's personal dream is to become as powerful, legendary and well noted female ninja as Tsunade. She can be quite fierce sometimes, especially with Lee, violently shaking him whenever he is left unconscious, Naruto also describes her personality as fierce and scary. She also says different stuff from what she thinks, like when she called Lee and idiot and reckless but in reality she knew he would have won against the Sound Nin if there weren't any distractions. Tenten also has shown a strong distaste for weakness or being overly dependent on other people. Despite this, she is not above showing a softer side when it comes to her team-mates. She holds great respect for her former team-mate, Neji, and often helped him train like the time before Neji's Chūnin Exams, she got him ready for his match.
+                                </p>
+                                <hr>
+                                <p>Contributed by- Ayush</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Sample Tenten card end-->
-
-            <!--Add your card below this line -->
-
-            <!--Sample Daisuke Kambe card start-->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <!--Sample Tenten card end-->
+                <!--Add your card below this line -->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="./images/meghumi fushiguro.jpg" alt="meghumi fushiguro" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Meghumi Fushiguro</h2>
+                                <p class="card-text">
+                                    Megumi Fushiguro is a fictional character of the manga series Jujutsu Kaisen created by Gege Akutami. He is a first-year student at Tokyo Jujutsu High, an academy to become a Jujutsu sorcerer and develop cursed techniques to fight against cursed spirits, beings manifested from cursed energy due to negative emotions flowing from humans.
+                                </p>
+                                <p>
+                                    He is a descendant to the Zenin family, one of the ultimate clans dominating the world of sorcery.[1] Early in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to locate one of Sukuna's fingers, objects belonging to the most powerful cursed spirit of all time which leads to him partnering with and befriending Yuji Itadori, a fellow first-year Jujutsu sorcerer.
+                                </p>
+                                <hr>
+                                <p>Contributed by- Anant Jain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample [Character Name] card end-->
+                <!--Add your card below this line -->
+		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
@@ -5662,8 +5722,6 @@
                 </div>
             </div>
             <!--Sample Daisuke Kambe card end-->
-
-
             <!--Add your card below this line -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -5704,7 +5762,6 @@
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
-
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -5735,328 +5792,123 @@
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
 
+            
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Tsuyu_Asui_Full_Body_School_Uniform_Anime.webp" alt="Tsuyu Asui"
-                            height="390px" width="300px">
+                        <img src="./images/Hellsingalucard.png" alt="Alucard" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h2 class="card-title">Tsuyu Asui</h2>
+                            <h2 class="card-title">Alucard (Hellsing)</h2>
                             <p class="card-text">
-                                Tsuyu Asui (蛙あ吹すい梅雨つゆ Asui Tsuyu?), also known as the Rainy Season Hero: Froppy
-                                (梅雨入りヒーローフロッピー Tsuyuiri Hīrō Furoppī?), is a student in Class 1-A at U.A. High School,
-                                training to become a Pro Hero.
+                                Alucard , previously Count Dracula (Dorakyura), is a fictional character and the protagonist of the Hellsing manga and anime series created by Kouta Hirano. A vampire devoted entirely to the current head of the Hellsing family, Integra Hellsing, Alucard works with the Hellsing Organization against other vampires and evil forces, fighting with ferocity and cruelty, sometimes only killing after a target has been disabled and humiliated, while frequently allowing enemies more than one chance to kill him (though only seeking to be killed by a human, having grown bored of immortality and life). Count Dracula was defeated by Abraham Van Helsing and became the family's loyal servant. Decades later, Abraham's direct descendant Arthur Hellsing gives the Count the codename "Alucard". Hellsing is set over a hundred years later, where Alucard and the Hellsing Organization are forced to fight the remnants of a Nazi battalion. Alucard also appears in the prequel series Hellsing: The Dawn, taking a female form alongside his partner Walter C.
                             </p>
                             <p>
-                                Tsuyu is a short girl of a relatively slender build compared to her classmates and has
-                                notably large hands. Her appearance is rather frog-like; she has a very wide mouth,
-                                which dips down a little in the middle just like that of a common frog, and oval-shaped
-                                eyes with large, black irises, their lower eyelashes visibly pronounced. She also
-                                demonstrates some frog-like mannerisms, such as hopping on all fours instead of running
-                                and holding herself in a way that is somewhat connotative of a frog.
+                                Hirano created Alucard as a strong individual who would be deus ex machina on his own, resulting in an easy defeat of most enemies. Alucard is voiced by Jouji Nakata in Japanese and Crispin Freeman in English. Critical response to the character has been positive for Alucard's dark traits such as sadism or supernatural abilities that make him stand out as excessively violent despite being the main hero. Alucard's design also stood out for being called "stylish", praising his outfits and weaponry. Alucard's voice portrayals by Nakata and Freeman were also met with a positive response.
                             </p>
                             <hr>
-                            <p>Contributed by- Barmendu Chakraborty</p>
+                            <p>Contributed by- Smruti Ranjan</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Sample [Character Name] card end-->
             <!--Add your card below this line -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/roymustang.jpeg" alt="Roy Mustang" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Roy Mustang</h2>
+                            <p class="card-text">
+                              Roy Mustang (ロイ・マスタング Roi Masutangu?), also known as the Flame Alchemist (焔の錬金術師 Honō no Renkinjutsushi?), is the tritagonist of the Fullmetal Alchemist series.
+				    He is a State Alchemist and officer in the Amestrian State Military. A hero of the Ishval Civil War and Edward Elric’s superior officer, Colonel Mustang is a remarkably capable commander who plans to become the next Führer of Amestris.
+                            </p>
+                            <p>
+                              Despite his ambition, as the series continues, Mustang decides to overthrow the State Military after his best friend, Maes Hughes, is killed by the homunculi, who are controlling the Military.
+				    Besides his appearances in the manga and the anime, Mustang has also been featured in other media for the series, such as Makoto Inoue's light novels, the original video animations and the Fullmetal Alchemist video games. 
+				    Since his introduction in the manga series, Mustang has been well received by readers, appearing second in each popularity poll for the series. His character has also received praise in various outside media, with many of them focusing on his character and development in both manga and anime.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Pranjal Mishra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+	    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/David Martinez.jpg" alt="David Martinez" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">David Martinez</h2>
+                            <p class="card-text">
+                              David Martinez is a Latino teenager with light brown eyes and brown hair that he wears in a quaffed hairstyle, with the sides shaved. He has a thin athletic build typical of a teenager his age. David's typical style is Kitsch, sporting a black t-shirt, two golden chain necklaces (one with a cross), gray cropped sweatpants with two yellow straps on either side, and white tennis shoes with blue straps. Later on, he starts to wear his mother's yellow EMT jacket with a blue luminescent collar on the inside of the material, with a green logo painted on the back. 
+                            </p>
+                            <p>
+                              After being chipped in, David—while still expelled—returned the following day to the academy, in search of a rematch with Katsuo. Utilizing his Sandevistan implant, David easily floored Katsuo with a single blow to the head and broke his nose. Once returned home, David stared at the urn holding his mother's ashes, when he received a call from the academy's principal. The principal told David that his expulsion had been formally processed, but before the principal could end his sentence, David ended the conversation. The next morning, making his way to the academy, he noticed that the mysterious girl was aboard the NCART train, stealing shards from unsuspecting corporate employees on their way to City Center. The woman attempted to also take David's shards, but was quickly intercepted by David utilizing his implant. He grasped her arm, which she shrugged off and instead took him with her to the end of the cart, and interrogated David on why he was messing with her “job”. After a short discussion, the two came to an agreement to work together, Lucy taking on David as her trainee, and split their earnings seventy-to-thirty. After a short confrontation with an ambulance worker who wanted to steal David's Sandevistan to sell on the black market, David stays the night at Lucy's apartment, where she tells him her dream of leaving Night City to live on the moon, and shares a braindance with him. The two bond during this experience, but while David is asleep Lucy calls her team of mercs to her apartment. Maine, Dorio, and Pilar arrive and confront David about the stolen Sandevistan, which Gloria had originally planned to sell to Maine. After David reveals that Gloria had died, and demonstrates an extreme tolerance for cyberware, he's given a chance to join their group, on the condition that he proves himself in a small-scale data heist. 
+                            </p>
+                            <hr>
+                            <p>Contributed by- Anirban Roy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/hori.jpg" alt="Kyouko Hori" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Kyouko Hori</h2>
+                            <p class="card-text">
+				    Kyouko Hori (堀 京子 Hori Kyōko?) is one of the protagonists of Horimiya (Manga). She is a student in Class 3-1 of Katagiri Senior High School.
+                            </p>
+                            <p>
+				    Kyouko is a tall and slim girl who is known to be cute and pretty by most of her classmates with mid-back length chestnut-brown hair that is usually tied up (whenever she is outside of school or in a casual setting) with bangs swept to the right side and golden-brown eyes.
+                            </p>
+                            <hr>
+                            <p>Contributed by- Muskan Singh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
 
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Aleister_Crowley_29.webp" alt="Aleister Crowley" height="390px"
-                            width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Aleister CROWLEY</h2>
-                            <p class="card-text">
-                                Aleister Crowley (アレイスター＝クロウリー Areisutā Kurōrī?) (12 October 1875–1 December 1947
-                                officially), born Edward Alexander Crowley (エドワード=アレクサンダー=クロウリー Edowādo Arekusandā
-                                Kurōrī), is the founder, leader, and Board Chairman (統括理事長 Toukatsu Rijichou?, lit.
-                                "General Superintendent", Yen Press: General Board chairperson) of Academy City who
-                                holds power greater than that of the Board of Directors.
-                            </p>
-                            <p>
-                                He is referred to as the greatest magician in history and magic's greatest
-                                embarrassment, who had quit magic in order to analyze science and technology.[2] He is
-                                the de facto leader of the Science Side as the ruler of Academy City, and his actions
-                                and plans continually subvert the magic side and often move the actions of the
-                                protagonists. For those reasons, he can be arguably considered the main antagonist of
-                                the entire franchise.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Jasmeen Kour</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src=".\images\c699504c30148e05175998b549e36c51.jpg" alt="Abigail Jones" height="390px"
-                            width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Abigail Jones</h2>
-                            <p class="card-text">
-                                Abigail "Aby" Jones (アビゲイル・ジョーンズ, Abigeiru Jōnzu?) is an athletic, taciturn woman who is
-                                Laurent's second-in-command and member of Team Confidence.
-                            </p>
-                            <p>
-                                Her great physical abilities come in part from her childhood ballet training. Her life
-                                changed when war broke out in her homeland Iraq, and she carries a dented medal that she
-                                won in a ballet competition as a memento of her parents.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Jasmeen Kour</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src=".\images\alucard.jpg" alt="Alucard" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Alucard</h2>
-                            <p class="card-text">
-                                Alucard (アーカード Ākādo?) is a powerful vampire and is the deuteragonist of the Hellsing
-                                anime series.He is the most powerful weapon of the Hellsing Organisation working against
-                                other vampires and other such supernatural forces.
-                            </p>
-                            <p>
-                                Alucard is no mere vampire; it has been implied that he is one of the most powerful
-                                vampires (besides Incognito), as well as the most powerful entity in the entire series.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Jasmeen Kour</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src=".\images\seryu.jpg" alt="Seryu Ubiquitous" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Seryu Ubiquitous</h2>
-                            <p class="card-text">
-                                Seryu Ubiquitous is a major antagonist in the Anime/Manga Akame Ga Kill!. She was a
-                                member of the military team known as the Jaegers and a former member of the Imperial
-                                Guard.
-                            </p>
-                            <p>
-                                Seryu was a woman with a strong, but warped, sense of justice that defined her highly
-                                delusional and psychotic obsession. She is Mine's arch-nemesis.She was voiced by Kana
-                                Hanazawa in Japanese and Kira Vincent-Davis in English. The latter who also voices Lucy
-                                and Kokoa Shuzen.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Jasmeen Kour</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/hange.jpg" alt="Hange-Zoe" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Hange Zoë</h2>
-                            <p class="card-text">
-                                Hange Zoë is a Squad Leader of the Survey Corps in charge of the 4th squad, and directs
-                                experiments in Titan research.
-                            </p>
-                            <p>
-                                Hange Zoë was the 14th commander of the Survey Corps, named so by Erwin Smith before his
-                                death.[6] Hange was formerly a squad leader (分隊長 Bun-taichō?) in charge of the Fourth
-                                Squad, having the duties of innovative inventing and conducting research on Titans,
-                                including Eren Yeager. After being promoted to commander, Hange was also in charge of
-                                expedition planning, management of the regiment, recruiting, and all the other
-                                responsibilities previously handled by Erwin. Upon their death, they were succeeded by
-                                Armin Arlert.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Charumathi P</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/ZekeJaeger.webp" alt="Zeke Jaeger" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Zeke Jaeger</h2>
-                            <p class="card-text">
-                                Zeke Jaeger is a popular character in manga and anime series Attack on Titan(Shingeki No
-                                Kyojin). He is the former War Chief of Marley's Warriors assigned to take the Founding
-                                titan from Eldians of Paradis island. He is the current holder of the Beast Titan.
-                            </p>
-                            <p>
-                                Zeke is the son of Gresha Jaeger and Dina Fritz, older half brother of Eren Jaeger
-                                through his father and a member of Fritz royal family through his mother.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Sanket Jaiswal</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/mugen.jpg" alt="Mugen(Samurai Champloo)" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Mugen(Samurai Champloo)</h2>
-                            <p class="card-text">
-                                Mugen (無限, Infinity) is one of the main male protagonists of Samurai Champloo along with
-                                Jin. Both Mugen and Jin accompany Fuu in her search for "the samurai who smells of
-                                sunflowers."
-                            </p>
-                            <p>
-                                Mugen serves as a foil to Jin in terms of personality and disposition. His fighting
-                                style is characterized as being reckless and erratic.
-                                During the title cards, his totem is the rooster.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Saksham Kankani</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample Mugen(Samurai Champloo) card end-->
-            <!--Add your card below this line -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Dracula-Castlevania.png" alt="Dorakyura Burado Tsepeshu" height="390px"
-                            width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Dorakyura Burado Tsepeshu</h2>
-                            <p class="card-text">
-                                Vlad "Dracula" Ţepeş (ドラキュラ・ヴラド・ツェペシュ Dorakyura Burado Tsepeshu?, lit. "Dracula Vlad
-                                Ţepeş") is the main antagonist of the first and second season of the Netflix original
-                                series, Castlevania. He is the father of Alucard, as well as the widower of Lisa Ţepeş.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Hamza Nawab</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Kenma_Kozume.jpg" alt="Kenma Kozume" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Kenma Kozume</h2>
-                            <p class="card-text">
-                                Kenma usually has a quiet, composed and analytical personality. He rarely loses his
-                                temper, and usually does not get too excited or fired-up about most things; with a few
-                                exceptions being video games, Hinata, Lev - in The Arrival of Haiba Lev (OVA), and
-                                Yamamoto during their first year in high school.
-                            </p>
-                            <p>
-                                Because of his reserved nature, Kenma does not often voice his opinions since he is
-                                afraid of what others might think of him and does not like standing out or being noticed
-                                in any way. His shy tendencies also prevent him from being very approachable and because
-                                of this, he has a difficult time making friends; with Kuroo being stated to have been
-                                the only friend he's made since elementary school. He also is not fond of the authority
-                                that comes with being an upperclassman and doesn't expect his junior's to automatically
-                                respect him; often reminding Lev that he does not need to be so formal with him.
-                            </p>
-                            <hr>
-                            <p>Contributed by- Chirantan Basu</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sample [Character Name] card end-->
-            <!--Add your card below this line -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/Draken.png" alt="Ken Ryuguji" height="390px" width="300px">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Ken Ryuguji</h2>
-                            <p class="card-text">
-                                Draken is a muscular teenager who is exceptionally tall for his age. His head is shaven on the sides and back to expose his signature dragon tattoo on his left temple. His blonde hair is long on the top of his head and kept in a neat braid. He leaves a few strands of hair lose in the front.
-                            </p>
-                            <p>
-                                Draken is a very caring individual. He hates overtly showing affection to the ones he cares about but will go to great lengths to take care of Mikey. He puts up with Mikey's antics and values him as a close friend, carries Mikey around when he falls asleep, takes him to eat his favorite foods, and wakes him up every morning for school. In addition, he gave Emma a plushie for her birthday, and Emma notes that it was one that she had been wanting for a while.    
-                            </p>
-                            <hr>
-                            <p>Contributed by- Siddhant Srivastava</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+	</div>
     </main>
+    <footer>
+
+        <div class="pagination">
+            <li class="page-item previous-page"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+        </div>
 
 
 
 
     <!-- Do not alter the code below this line unless you want to improve the website -->
 
-    <!-- Do not alter the code below this line unless you want to improve the website -->
+    
 
 
     <footer>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark nav1 " >
+
             <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
                     href="https://github.com/DecodersCommunity">Decoders Community</a></p>
         </nav>
@@ -6073,6 +5925,9 @@
     <script src="scrollEffect.js"></script>
     <script src="/indexdarkmode.js"></script>
     <script src="scrolltotop.js"></script>
+    <script src="pagination.js"></script>
+    <!-- <script src="swipper.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
         /* ------- Scroll To Top Button -------*/
@@ -6119,6 +5974,27 @@
 
             element.classList.toggle("dark-mode");
         }
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+            },
+            centeredSlides: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }
+          });
+        
+
+
+        
+
+
+        
     </script>
 
 </body>
