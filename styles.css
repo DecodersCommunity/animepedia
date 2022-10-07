@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #999;
 
   /* Changed the position of search box */
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   margin-top: 40px;
 }
 
@@ -231,6 +231,8 @@ body::-webkit-scrollbar-thumb {
 /* Search Result CSS */
 
 .search-results {
+  height: 90px;
+  overflow-y: scroll;
   position: absolute;
   top: 50px;
   left: 0;
