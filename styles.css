@@ -1,5 +1,5 @@
 html{
-  overflow: hidden;
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 }
 
 /* Custom Scroll Bar */
-/* ::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 5px;
 }
 
