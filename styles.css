@@ -8,7 +8,7 @@ body {
 }
 
 /* Custom Scroll Bar */
- ::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 5px;
 }
 
