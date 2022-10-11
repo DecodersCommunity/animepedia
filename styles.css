@@ -1,3 +1,8 @@
+html{
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Ninja Naruto", arial;
 }
@@ -126,7 +131,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #999;
 
   /* Changed the position of search box */
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   margin-top: 40px;
 }
 
@@ -231,6 +236,8 @@ body::-webkit-scrollbar-thumb {
 /* Search Result CSS */
 
 .search-results {
+  height: 90px;
+  overflow-y: scroll;
   position: absolute;
   top: 50px;
   left: 0;
@@ -240,8 +247,13 @@ body::-webkit-scrollbar-thumb {
   gap: 0.5rem;
   border-radius: 10px;
   padding: 1rem;
-  display: none;
-  z-index: 1
+
+  display:none;
+  z-index: 2;
+
+
+
+
 }
 .search-results p {
   border-bottom: 1px solid #c2c1c1;
@@ -414,7 +426,7 @@ h2 {
 }
 body {
   background-color: white;
-  font-family: "Righteous", cursive;
+  font-family: "Ninja Naruto", arial;
   font-weight: bold;
 }
 h1 {
@@ -497,7 +509,7 @@ h1 {
 h2.card-title {
   font-size: 2.8rem;
   font-weight: 900;
-  color: #141a46;
+  color: black;
 }
 
 .topic {
@@ -673,7 +685,6 @@ ul.navbar-nav.mr-auto {
   }
   
   .swiper-image {
-    
     position: relative;
     width: 62%;
     padding-top: var(--swiper-image-ratio);
@@ -738,6 +749,98 @@ ul.navbar-nav.mr-auto {
       left: calc((100% - var(--swiper-mobile-width)) / 2);
     }
   }
+
+
+/* Footer and Contact Page Css */
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 10px 0;
+           /* min-height: 100vh;*/
+        }
+ ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 180px;
+}
+
+section, .animepediaFooter {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+.animepediaFooter p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.animepediaFooter img {
+    width: 100px;
+}
+
 
     /* Mobile devices */
     @media (min-width: 320px) and (max-width: 480px) {
