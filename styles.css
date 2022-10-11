@@ -66,7 +66,7 @@ body::-webkit-scrollbar-thumb {
   }
   .switch-container .switch-label .switch-rail .switch-slider {
     transition: all 0.2s ease-in-out;
-    position: absolute;
+    position: relative;
     top: 4px;
     left: 4px;
     width: 22px;
