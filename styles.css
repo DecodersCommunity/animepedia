@@ -293,6 +293,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .card-bg {
   background-color: rgb(174, 184, 86);
@@ -349,7 +350,6 @@ h1 {
 .card {
   overflow: clip;
 }
-
 .card img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
