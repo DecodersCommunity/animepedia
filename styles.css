@@ -902,4 +902,60 @@ section, .animepediaFooter {
       right: 10rem;
     }
 
-
+/* Animated text */
+    .animated-text {
+      width: 100%;
+      font-weight: 900;
+      text-align: left;
+    }
+    .animate {
+      font-size: 40px;
+    }
+    
+    .animate span {
+      display: inline-block;
+    }
+    .animate span:nth-of-type(2) {
+      animation-delay: .1s;
+    }
+    .animate span:nth-of-type(3) {
+      animation-delay: .2s;
+    }
+    .animate span:nth-of-type(4) {
+      animation-delay: .3s;
+    }
+    .animate span:nth-of-type(5) {
+      animation-delay: .4s;
+    }
+    .animate span:nth-of-type(6) {
+      animation-delay: .5s;
+    }
+    .animate span:nth-of-type(7) {
+      animation-delay: .6s;
+    }
+    .animate span:nth-of-type(8) {
+      animation-delay: .7s;
+    }
+    .animate span:nth-of-type(9) {
+      animation-delay: .8s;
+    }
+    .animate span:nth-of-type(10) {
+      animation-delay: .9s;
+    }
+    .one span {
+      color: #000000;
+      opacity: 0;
+      transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+      animation: revolveScale .4s forwards;
+    }
+    
+    @keyframes revolveScale {
+      60% {
+        transform: translate(20px, 20px) rotate(30deg) scale(.3);
+      }
+    
+      100% {
+        transform: translate(0) rotate(0) scale(1);
+        opacity: 1;
+      }
+    }
