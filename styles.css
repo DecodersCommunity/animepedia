@@ -136,6 +136,9 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 100px;  
   margin-top: 40px;
 }
+.search: hover {
+   box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+}
 
 .activated {
   width: 360px;
@@ -173,6 +176,20 @@ body::-webkit-scrollbar-thumb {
   height: 12px;
   background: #000;
   transform: translate(6px, 6px) rotate(315deg);
+   position:relative;
+   text-align: center;
+   width:250px;
+   padding:40px;
+   font-size:35px;
+   color:#15f4ee;
+   font-family: poppins;
+   font-weight:400;
+   border:5px solid #15f4ee;
+   text-transform:uppercase;
+   letter-spacing: 15px;
+   cursor:pointer;
+   border-radius: 100px;
+   transition:1.5s;
 }
 
 .search .input {
