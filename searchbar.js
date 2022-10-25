@@ -34,8 +34,8 @@ function render_results(){
 
     const textValue = h.textContent.toUpperCase();
 
-    // If length of entered text is greater than 2 then showing it in Search Result 
-    if(filter.length>=2 && textValue.includes(filter))
+    // If length of entered text is greater than 1 then showing it in Search Result
+    if(filter.length>=1 && textValue.includes(filter))
     {
       search_suggestion_html+='<div class="each-result" onclick="updatesearchbar(this)"><p>'+textValue+'</p></div>'
       search_result_div.innerHTML=search_suggestion_html
