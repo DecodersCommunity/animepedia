@@ -10346,31 +10346,30 @@ Power usually wears the standard dress shirt, tie, and slacks required of Public
     <script>
         function darkMode() {
             var element = document.body;
-
             //Added bootstrap navbar class for dark and light mode
-            let navBackground = document.getElementById("navBackground ");
-            let toggle = document.querySelector(".navbar-toggler ");
+            let navBackground = document.getElementById("navBackground");
+            let toggle = document.querySelector(".navbar-toggler");
             const btn = document.getElementById('btn');
-            let themeIcon = document.getElementById("themeIcon ");
+            let themeIcon = document.getElementById("themeIcon");
 
-            if (btn.classList.contains("btn-outline-dark ")) {
-                btn.classList.remove("btn-outline-dark ");
-                btn.classList.add("btn-outline-light ");
-                navBackground.classList.remove("bg-light ")
-                navBackground.classList.add("bg-dark ")
-                themeIcon.classList.remove("bi-brightness-high ")
-                themeIcon.classList.add("bi-moon-stars ")
-                toggle.classList.add("custom-toggler ")
+            if (btn.classList.contains("btn-outline-dark")) {
+                btn.classList.remove("btn-outline-dark");
+                btn.classList.add("btn-outline-light");
+                navBackground.classList.remove("bg-light")
+                navBackground.classList.add("bg-dark")
+                themeIcon.classList.remove("bi-brightness-high")
+                themeIcon.classList.add("bi-moon-stars")
+                toggle.classList.add("custom-toggler")
             } else {
-                btn.classList.add("btn-outline-dark ");
-                navBackground.classList.add("bg-light ")
-                navBackground.classList.remove("bg-dark ")
-                themeIcon.classList.remove("bi-moon-stars ")
-                themeIcon.classList.add("bi-brightness-high ")
-                toggle.classList.remove("custom-toggler ")
+                btn.classList.add("btn-outline-dark");
+                navBackground.classList.add("bg-light")
+                navBackground.classList.remove("bg-dark")
+                themeIcon.classList.remove("bi-moon-stars")
+                themeIcon.classList.add("bi-brightness-high")
+                toggle.classList.remove("custom-toggler")
             }
 
-            element.classList.toggle("dark-mode ");
+            element.classList.toggle("dark-mode");
         }
 
         const swiper = new Swiper('.swiper', {
