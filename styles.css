@@ -714,7 +714,7 @@ ul.navbar-nav.mr-auto {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     color: #fff;
-    font-size: 12px;
+    font-size: 25px !important;
   }
   
   .swiper-button-next {
@@ -972,6 +972,13 @@ section, .animepediaFooter {
       transform: translate(-150px, -50px) rotate(-180deg) scale(3);
       animation: revolveScale .4s forwards;
     }
+    .brand-dark{
+      color: white;
+    }
+    .brand-dark span{
+      color: white;
+    }
+    
     
     @keyframes revolveScale {
       60% {

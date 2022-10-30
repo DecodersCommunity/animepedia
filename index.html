@@ -10578,6 +10578,7 @@ Power usually wears the standard dress shirt, tie, and slacks required of Public
             let toggle = document.querySelector(".navbar-toggler");
             const btn = document.getElementById('btn');
             let themeIcon = document.getElementById("themeIcon");
+            const brandLetters = document.getElementById("animation");
 
             if (btn.classList.contains("btn-outline-dark")) {
                 btn.classList.remove("btn-outline-dark");
@@ -10597,6 +10598,7 @@ Power usually wears the standard dress shirt, tie, and slacks required of Public
             }
 
             element.classList.toggle("dark-mode");
+            brandLetters.classList.toggle("brand-dark");
         }
 
         const swiper = new Swiper('.swiper', {
