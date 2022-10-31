@@ -118,7 +118,6 @@ body::-webkit-scrollbar-thumb {
 .theme-btn {
   padding-top: 5px;
 }
-
 .search {
   /* position: fixed; */
   left: 30px;
@@ -571,9 +570,6 @@ h2.card-title {
     margin-left: auto;
     margin-right: auto;
   }
-  .nav-link {
-    margin-left: 45%;
-  }
   .search {
     left: 1rem;
   }
@@ -718,7 +714,7 @@ ul.navbar-nav.mr-auto {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     color: #fff;
-    font-size: 12px;
+    font-size: 25px !important;
   }
   
   .swiper-button-next {
@@ -976,6 +972,13 @@ section, .animepediaFooter {
       transform: translate(-150px, -50px) rotate(-180deg) scale(3);
       animation: revolveScale .4s forwards;
     }
+    .brand-dark{
+      color: white;
+    }
+    .brand-dark span{
+      color: white;
+    }
+    
     
     @keyframes revolveScale {
       60% {
@@ -987,3 +990,9 @@ section, .animepediaFooter {
         opacity: 1;
       }
     }
+.nav-home:hover{
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+    
