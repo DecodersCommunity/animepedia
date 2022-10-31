@@ -845,6 +845,12 @@ section,
   width: 100px;
 }
 
+.nav-link {
+  text-align: center;
+  border-radius: 100px;
+  min-width: 100px;
+}
+
 /* Mobile devices */
 @media (min-width: 320px) and (max-width: 480px) {
   #carouselExampleIndicators {
