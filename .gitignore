@@ -2,5 +2,8 @@
 .vscode
 .idea
 
-### ignore MacOS specific files ###
+# OS generated files
 .DS_Store
+.Trashes
+ehthumbs.db
+Thumbs.db
