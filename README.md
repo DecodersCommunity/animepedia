@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/main_bg.jpg" height="50%" width="80%" /></p>
+<p align="center"><img src="./assets/bg3.jpg" height="50%" width="80%" /></p>
 
 # AnimePedia
 
