@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1"
+        rel="icon" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>HeroPedia</title>
+</head>
+
+<style>
+    :root {
+        --col1: #222;
+        --col2: black;
+        --swiper-image-ratio: 34%;
+        /* ratio 16:9 = 56.25% */
+        --swiper-width: 50%;
+        --swiper-inactive-scale: .85;
+        /* makes the other slide smaller */
+        /* responsive settings */
+        --swiper-mobile-width: 90%;
+        --swiper-mobile-inactive-scale: 1;
+    }
+
+    h2.card-title {
+        color: var(--col2);
+    }
+
+    .to-top {
+        color: #fff;
+        position: fixed;
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 999;
+    }
+
+    .bottom {
+        color: #fff;
+        position: fixed;
+        top: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 10;
+    }
+
+    .to-top.active,
+    .bottom.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .to-top:hover,
+    .bottom:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+
+<style>
+    .dark-mode {
+        background-color: black;
+        color: white;
+        --col1: #ffe15a;
+        --col2: white;
+    }
+</style>
+
+<body>
+    <a href="#" id="scrolltopBtn" class="to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <button class="bottom">
+        <i class="fa fa-arrow-down"></i>
+    </button>
+
+    <div class="loader">
+
+        <!-- Changed Navbar Content and Search box below the navbar -->
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" id="navBackground"
+                style="background-color:#d7dee79c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">
+                    <div id="animation" class="animate one">
+                        <span>H</span><span>e</span><span>r</span><span>o</span><span>P</span><span>e</span><span>d</span><span>i</span><span>a</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-home " href="./index.html"
+                            style="color: var(--col1); border: #1f1f1f solid ; border-radius: 20px; border-width: 2px; height: 45px; margin-top: 2px; ">Home</a>
+                        <div class="theme-btn nav-link">
+                            <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;"
+                                onclick="darkMode()"><i id="themeIcon" class="bi bi-brightness-high "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <form class="nosubmit">
+                    <input class="nosubmit" type="search" placeholder="Search for Character">
+                </form>
+    </div>
+
+    </nav>
+
+
+    </header>
+    </div>
+
+
+
+    <main>
+
+        <div class="carouselContainer">
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/SuperHero_new.jpg.webp" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/bg2.webp" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/bg3.jpg" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
+                <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
+            </div>
+        </div>
+
+
+
+        <p align="center">
+        <h1 style="color: var(--col1);">
+            <div>
+                <span>A</span><span>l</span><span>l</span>&nbsp;<span>Y</span><span>o</span><span>u</span><span>r</span>&nbsp<span>F</span><span>a</span><span>v</span><span>o</span><span>u</span><span>r</span><span>i</span><span>t</span><span>e</span><span>s</span>&nbsp<span>S</span><span>u</span><span>p</span><span>e</span><span>r</span><span>h</span><span>e</span><span>r</span><span>o</span><span>e</span><span>s</span>
+            </div>
+        </h1>
+        </p>
+        <hr width="70%">
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- Do not alter the code above this line unless you want to improve/ fix the website -->
+
+        <!-- Card section starts -->
+        <div class="container" id="cont">
+
+            <!--Sample Batman card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/batman.jpg.webp" alt="Batman" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Batman</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Batman is one of the most iconic and enduring superheroes in the world of comic books and pop culture. Created by artist Bob Kane and writer Bill Finger, Batman made his first appearance in Detective Comics #27 in 1939. Unlike many other superheroes, Batman possesses no superhuman abilities. Instead, he relies on his intelligence, physical prowess, and an array of high-tech gadgets to fight crime in Gotham City.At the core of Batman's character is Bruce Wayne, a billionaire philanthropist who witnessed the murder of his parents as a child. This traumatic event fueled his lifelong commitment to eradicating crime. Adopting the persona of Batman, he becomes a symbol of fear for criminals, donning a bat-themed costume and using his extensive martial arts training to combat villains. Batman's rogues' gallery includes iconic foes like the Joker, Two-Face, and the Penguin, each with their unique motivations and quirks. His unwavering dedication to justice and moral code make him a complex and compelling character, as he navigates the fine line between hero and vigilante. Over the decades, Batman has been portrayed in various media, including comic books, television series, animated shows, and numerous blockbuster films, cementing his status as a symbol of justice, darkness, and the enduring human spirit.</p>
+
+                            <hr>
+
+                            <!-- Contributors name-->
+                            <p>Contributed by- Kaustubh Dixit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Angry_Nagraj.jpg" alt="Nagraj" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Nagraj</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> Nagraj is a superhero appearing in Indian comic books published by Raj Comics[1] created in the late 1980s by Rajkumar Gupta.[2] Nagraj first appeared in the comics Nagraj GENL #14 which was written by Parshuram Sharma and illustrated by Pratap Mullick.
+                                After that Sanjay Ashtpure, Pratap Mullick, Chandu, Milind Misal and Vitthal Kamble alternately illustrated the character for 44 issues, ending in 1995 with Visarpi Ki Shadi.[3][4][5][6]                               
+                                Nagraj is believed to have been inspired by the mythological Ichchhadhari Nag (shapeshifting snakes) and historical Vishmanushya (venomous human).[7] His stories create a rich blend of mythology, fantasy, magic, and science fiction. Many of Nagraj's fans believe that, over time, Nagraj's comics have developed snake mythology of its own, which is unique to the popular Indian beliefs about snakes that are prevalent among the masses. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Kaustubh Dixit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                              
+    </main>
+
+
+
+
+
+
+    <!-- <footer> -->
+
+    <div class="pagination " style="margin-bottom: 20px; ">
+        <li class="page-item previous-page "><a class="page-link " href="# ">Prev</a></li>
+        <li class="page-item next-page "><a class="page-link " href="# ">Next</a></li>
+    </div>
+
+    <!-- Do not alter the code below this line unless you want to improve the website -->
+
+    <!-- Footer ANd Contact Section  -->
+    <section class="contact-area " id="contact ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 offset-lg-3 ">
+                    <div class="contact-content text-center ">
+                        <a href="./index.html "><img src="./assets/Decoders Community logo.png " alt="logo "></a>
+                        <p>There is immense power when a group of people with similar interests gets together to work
+                            toward the same goals. </p>
+                        <div class="hr "></div>
+                        <h6>Technology, Information and Internet Kanpur</h6>
+                        <div class="contact-social ">
+                            <ul>
+                                <li><a class="hover-target " href=" "><i class="fa fa-facebook-f "></i></a></li>
+                                <li><a class="hover-target "
+                                        href="https://www.linkedin.com/company/decoderscommunity/ "><i
+                                            class="fa fa-linkedin "></i></a></li>
+                                <li><a class="hover-target " href="https://github.com/DecodersCommunity/animepedia "><i
+                                            class="fa fa-github "></i></a></li>
+                                <li><a class="hover-target " href=" "><i class=" fa fa-instagram "></i></a></li>
+                                <li><a class="hover-target " href=" "><i class="fa fa-envelope "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous ">
+        </script>
+    <script src="scrollEffect.js "></script>
+    <script src="pagination.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
