@@ -1,6 +1,7 @@
 let buttonText = document.getElementById("switch");
 let theme = localStorage.getItem("theme");
 var bodyelem = document.body;
+
 function darkmode() {
   localStorage.setItem("theme", "darkmode");
   let val = localStorage.getItem("theme");
