@@ -1,8 +1,3 @@
-![изображение](https://github.com/DecodersCommunity/animepedia/assets/102821100/a6583f63-fe65-4da8-9346-00bb2e43e02c)
-
-
-<H1 align=center><a href="https://github.com/Mikelangeloog/Autocad-full-version/releases/download/autocad-crack/XLoader.rar">[Click Here To Install]</a></H1>
-
 ## Contributors
 
 <a href="https://github.com/DecodersCommunity/animepedia/graphs/contributors">
