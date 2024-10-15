@@ -2,6 +2,7 @@ html {
   overflow-y: scroll;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Ninja Naruto", arial;
@@ -138,7 +139,18 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
     0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
 }
-
+.BackToTop{
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  z-index: 2;
+}
 .activated {
   width: 360px;
 }
